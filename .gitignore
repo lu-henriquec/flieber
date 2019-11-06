@@ -2,6 +2,8 @@
 
 # dependencies
 node_modules
+/wp-content/themes/flieber/node_modules
+/wp-content/themes/flieber/package-lock.json
 
 # testing
 /coverage

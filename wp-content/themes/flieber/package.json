@@ -1,0 +1,37 @@
+{
+  "name": "flieber",
+  "description": "Flieber",
+  "version": "1.0.0",
+  "author": "Lucas Henrique",
+  "private": true,
+  "dependencies": {
+    "animate-sass": "tgdev/animate-sass",
+    "normalize.css": "^4.1.1",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "css-mqpacker": "^7.0.0",
+    "del": "~5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.10.3",
+    "jshint-stylish": "^2.2.1",
+    "postcss-flexibility": "^2.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1"
+  }
+}

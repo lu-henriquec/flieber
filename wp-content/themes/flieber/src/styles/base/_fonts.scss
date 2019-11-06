@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+//------------------------------------
+//  FONTS
+//------------------------------------
+
+@font-face {
+	font-family: 'proximanova-light';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/proximanova-light.eot'),
+		 url('fonts/proximanova-light.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/proximanova-light.woff2') format('woff2'),
+		 url('fonts/proximanova-light.woff') format('woff'),
+		 url('fonts/proximanova-light.ttf') format('truetype'),
+		 url('fonts/proximanova-light.svg#proximanova-light') format('svg');
+}
+
+@font-face {
+	font-family: 'proximanova-regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/proximanova-regular.eot'),
+		 url('fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/proximanova-regular.woff2') format('woff2'),
+		 url('fonts/proximanova-regular.woff') format('woff'),
+		 url('fonts/proximanova-regular.ttf') format('truetype'),
+		 url('fonts/proximanova-regular.svg#proximanova-regular') format('svg');
+}
+
+@font-face {
+	font-family: 'proximanova-bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/proximanova-bold.eot'),
+		 url('fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/proximanova-bold.woff2') format('woff2'),
+		 url('fonts/proximanova-bold.woff') format('woff'),
+		 url('fonts/proximanova-bold.ttf') format('truetype'),
+		 url('fonts/proximanova-bold.svg#proximanova-bold') format('svg');
+}
+
+$proximanova-light: 'proximanova-light', 'Helvetica Neue', Arial, sans-serif !default;
+$proximanova-regular: 'proximanova-regular', 'Helvetica Neue', Arial, sans-serif !default;
+$proximanova-bold:  'proximanova-bold', 'Helvetica Neue', Arial, sans-serif !default;
+
+
+// Base font-family
+$base-font-family         : $proximanova-light;
+$base-print-font-family   : Georgia, 'Times New Roman', Times, serif !default;
+

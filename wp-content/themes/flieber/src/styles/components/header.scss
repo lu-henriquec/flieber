@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+header {
+  padding: 15px 0;
+
+  .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    ul {
+      align-items: center;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 25px;
+    }
+
+    a {
+      color: $primary-color;
+      font-size: 18px;
+
+      &.feature {
+        background: $primary-color;
+        border-radius: 50px;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+        padding: 20px 40px;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/container.scss"],"names":[],"mappings":"AAAA;EACE,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,WAAW,EAAA","file":"container.css","sourcesContent":[".container {\n  margin: 0 auto;\n  max-width: 1740px;\n  padding: 0 10px;\n  width: 100%;\n}\n"]}

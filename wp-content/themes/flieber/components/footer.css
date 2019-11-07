@@ -1,0 +1,12 @@
+footer {
+  padding: 100px 0; }
+  footer .content {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+
+/*# sourceMappingURL=footer.css.map */

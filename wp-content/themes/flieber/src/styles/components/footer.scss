@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+.address {
+  align-items: center;
+  background: $secondary url("images/mapa-bg.png") center center no-repeat;
+  display: flex;
+  height: 417px;
+
+  .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  padding: 100px 0;
+
+  .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text {
+    color: $primary-color;
+  }
+
+  .social {
+    display: flex;
+
+    i {
+      margin: 0 10px;
+    }
+  }
+}

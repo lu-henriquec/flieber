@@ -1,10 +1,8 @@
 @charset 'UTF-8';
 
-/*! =================================================
-	* Theme Name: Layout - Flieber
-	* Description: CSS desenvolvido para Flieber.
-	* Author: Lucas Henrique
-	* Empresa: Flieber
-	* Version: 1.0
-	=================================================
-*/
+@import "./base/fonts";
+@import "./base/global";
+
+@import "./components/container";
+@import "./components/header";
+@import "./components/footer";

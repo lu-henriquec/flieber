@@ -1,8 +1,8 @@
---- 
-options: 
+---
+options:
   formatter: stylish
   merge-default-rules: false
-rules: 
+rules:
   empty-args: 1
   extends-before-declarations: 1
   extends-before-mixins: 1
@@ -13,16 +13,14 @@ rules:
   no-empty-rulesets: 2
   no-invalid-hex: 2
   no-mergeable-selectors: 2
-  no-misspelled-properties: 
+  no-misspelled-properties:
     - 2
-    - 
-      extra-properties: 
+    - extra-properties:
         - font-smooth
   no-trailing-zero: 1
   no-transition-all: 1
   one-declaration-per-line: 1
   property-sort-order: 1
-  quotes: 1
   single-line-per-selector: 1
   space-after-colon: 1
   space-after-comma: 1

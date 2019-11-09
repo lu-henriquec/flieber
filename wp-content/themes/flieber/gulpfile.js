@@ -28,9 +28,17 @@ var paths = {
 gulp.task("lint", function() {
   return gulp
     .src(paths.scripts)
-    .pipe($.jshint())
-    .pipe($.jshint.reporter("jshint-stylish"));
+    .pipe($.eslint())
+    .pipe($.eslint.format())
+    .pipe($.eslint.failAfterError());
 });
+
+// gulp.task("lint", function() {
+//   return gulp
+//     .src(paths.scripts)
+//     .pipe($.jshint())
+//     .pipe($.jshint.reporter("jshint-stylish"));
+// });
 
 gulp.task("scripts", ["lint"], function() {
   return gulp
@@ -107,11 +115,7 @@ gulp.task("styles", ["sasslint"], function() {
     .pipe(
       $.sass({
         outputStyle: $.util.env.production ? "compressed" : "nested",
-        includePaths: [
-          "node_modules",
-          "node_modules/slick-carousel/slick",
-          "./src/styles"
-        ]
+        includePaths: ["src/Styles", "node_modules/"]
       }).on("error", $.sass.logError)
     )
     .pipe($.postcss([autoprefixer(), mqpacker({ sort: true }), flexibility()]))

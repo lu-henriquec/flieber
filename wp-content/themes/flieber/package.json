@@ -7,7 +7,7 @@
   "dependencies": {
     "animate-sass": "tgdev/animate-sass",
     "normalize.css": "^4.1.1",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -17,9 +17,11 @@
     "browser-sync": "^2.26.7",
     "css-mqpacker": "^7.0.0",
     "del": "~5.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.18.0",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^6.1.1",
-    "gulp-jshint": "^2.1.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-load-plugins": "^2.0.1",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",

@@ -1,3 +1,4 @@
 "use strict";
 
-console.log("init");
+import "./core/header";
+import "./pages/home";

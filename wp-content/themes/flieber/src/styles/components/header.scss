@@ -2,6 +2,14 @@
 
 header {
   padding: 15px 0;
+  position: fixed;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+
+  &.fixed {
+    background: #fff;
+  }
 
   .content {
     align-items: center;

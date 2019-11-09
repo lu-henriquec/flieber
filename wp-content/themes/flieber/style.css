@@ -477,7 +477,14 @@ button {
   width: 100%; }
 
 header {
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: fixed;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1; }
+  header.fixed {
+    background: #fff; }
   header .content {
     -webkit-box-align: center;
             align-items: center;
@@ -556,6 +563,147 @@ footer {
       margin: 0 10px; }
     footer .social img {
       width: 25px; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+section.feature {
+  background: #2ea6d0;
+  height: 100vh;
+  max-height: 100%;
+  padding-top: 70px; }
+  section.feature .container {
+    height: 100%; }
+  section.feature .content {
+    -webkit-box-align: center;
+            align-items: center;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100%; }
+  section.feature .slider-nav h2 {
+    color: #19254f;
+    font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
+    font-size: 35px;
+    line-height: 44px;
+    margin-bottom: 20px; }
+  section.feature .slider-nav p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px; }
+  section.feature .slider-nav button {
+    background: #19254f;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-transform: uppercase; }
+  section.feature .slider-mask {
+    -webkit-box-align: end;
+            align-items: flex-end;
+    background: transparent url("./images/features/moldura_macbook.png") bottom center no-repeat;
+    background-size: 100% 100%; }
+  section.feature .slider-for {
+    margin: 0 auto 37px;
+    height: 100%;
+    max-height: 510px;
+    max-width: 86%;
+    padding-top: 4px;
+    width: 100%; }
+    section.feature .slider-for > div {
+      height: 100%;
+      max-height: 510px; }
+    section.feature .slider-for img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%; }
+  section.feature .slick-dots {
+    display: block !important;
+    list-style: none;
+    margin-top: 30px;
+    padding: 0; }
+    section.feature .slick-dots li {
+      display: inline-block;
+      margin: 0 8px; }
+    section.feature .slick-dots .slick-active button {
+      background: #19254f; }
+    section.feature .slick-dots button {
+      background: #ffffff;
+      border: none;
+      font-size: 0;
+      height: 3px;
+      padding: 0;
+      width: 50px; }
 
 .advantages {
   padding-top: 100px;

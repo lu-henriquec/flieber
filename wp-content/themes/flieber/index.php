@@ -6,6 +6,73 @@
 
 <?php get_header(); ?>
 
+  <!-- Feature -->
+  <section class="feature">
+    <div class="container">
+      <div class="content">
+        <div>
+          <div class="slider-nav">
+            <div>
+              <h2>The New Way to Operate Your E-commerce</h2>
+              <p>
+                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+              </p>
+              <button>Get started</button>
+            </div>
+            <div>
+              <h2>2 -The New Way to Operate Your E-commerce</h2>
+              <p>
+                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+              </p>
+              <button>Get started</button>
+            </div>
+            <div>
+              <h2>3 -The New Way to Operate Your E-commerce</h2>
+              <p>
+                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+              </p>
+              <button>Get started</button>
+            </div>
+            <div>
+              <h2>4 -The New Way to Operate Your E-commerce</h2>
+              <p>
+                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+              </p>
+              <button>Get started</button>
+            </div>
+            <div>
+              <h2>5 -The New Way to Operate Your E-commerce</h2>
+              <p>
+                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+              </p>
+              <button>Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class='slider-mask'>
+          <div class="slider-for">
+            <div>
+              <img src="<?php bloginfo('template_url'); ?>/images/features/tela_01.png" alt="The New Way to Operate Your E-commerce" />
+            </div>
+            <div>
+              <img src="<?php bloginfo('template_url'); ?>/images/features/tela_02.png" alt="The New Way to Operate Your E-commerce" />
+            </div>
+            <div>
+              <img src="<?php bloginfo('template_url'); ?>/images/features/tela_03.png" alt="The New Way to Operate Your E-commerce" />
+            </div>
+            <div>
+              <img src="<?php bloginfo('template_url'); ?>/images/features/tela_04.png" alt="The New Way to Operate Your E-commerce" />
+            </div>
+            <div>
+              <img src="<?php bloginfo('template_url'); ?>/images/features/tela_05.png" alt="The New Way to Operate Your E-commerce" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feature -->
+
   <!-- Advantages -->
   <section class="advantages">
     <div class="container">

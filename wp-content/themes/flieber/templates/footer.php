@@ -22,12 +22,12 @@
         <span>Copyright © 2019 Flieber Inc.</span>
       </div>
       <div class="social">
-        <i>F</i>
-        <i>T</i>
-        <i>L</i>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon_facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon_twiter.svg" alt="Twitter"></a>
+        <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon_linkedin.svg" alt="Linkedin"></a>
       </div>
       <div class="logo">
-        Logo
+        <img src='<?php bloginfo('template_url'); ?>/images/logo_Flieber.svg' alt='Flieber'/>
       </div>
     </div>
   </div>

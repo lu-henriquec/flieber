@@ -14,12 +14,13 @@ var gulp = require("gulp"),
 var paths = {
   webpack: "src/scripts/*.js",
   scripts: ["src/scripts/**/*.js", "!src/scripts/vendor/**/*.js"],
-  styles: ["src/styles/**/*.scss"],
+  styles: "src/styles/**/*.scss",
   images: "src/images/**/*.{png,jpeg,jpg,gif,svg}",
   extras: ["src/*.*", "src/fonts/**/*", "src/videos/**/*"],
   dest: {
     scripts: "js",
     images: "images",
+    styles: "css",
     extras: ""
   }
 };
@@ -83,7 +84,7 @@ gulp.task("sasslint", function() {
     .src(
       paths.styles
         .concat("!src/styles/components/_slick.scss")
-        .concat("!src/styles/helpers/_normalize.scss")
+        .concat("!src/styles/base/_fonts.scss")
         .concat("!src/styles/helpers/_debug.scss")
         .concat("!src/styles/components/_grid.scss")
     )
@@ -100,7 +101,7 @@ gulp.task("sasslint", function() {
 
 gulp.task("styles", ["sasslint"], function() {
   return gulp
-    .src(paths.styles)
+    .src("src/styles/*.scss")
     .pipe($.plumber())
     .pipe($.util.env.production ? $.util.noop() : $.sourcemaps.init())
     .pipe(
@@ -109,14 +110,13 @@ gulp.task("styles", ["sasslint"], function() {
         includePaths: [
           "node_modules",
           "node_modules/slick-carousel/slick",
-          // https://github.com/dlmanning/gulp-sass/commit/6b65a312f44f076c6f92ed3e35c20848bd9cdf6a
           "./src/styles"
         ]
       }).on("error", $.sass.logError)
     )
     .pipe($.postcss([autoprefixer(), mqpacker({ sort: true }), flexibility()]))
     .pipe($.sourcemaps.write("."))
-    .pipe(gulp.dest(""));
+    .pipe(gulp.dest("./"));
 });
 
 gulp.task("images", function() {

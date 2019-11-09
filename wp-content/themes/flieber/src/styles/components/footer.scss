@@ -2,7 +2,7 @@
 
 .address {
   align-items: center;
-  background: $secondary url("images/mapa-bg.png") center center no-repeat;
+  background: $secondary-color url("images/mapa-bg.png") center center no-repeat;
   display: flex;
   height: 417px;
 
@@ -24,8 +24,13 @@ footer {
 
   .content {
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
+  }
+
+  .logo {
+    width: 150px;
   }
 
   .text {
@@ -35,8 +40,12 @@ footer {
   .social {
     display: flex;
 
-    i {
+    a {
       margin: 0 10px;
+    }
+
+    img {
+      width: 25px;
     }
   }
 }

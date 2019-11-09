@@ -21,20 +21,26 @@
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
 define( 'DB_NAME', 'flieber' );
+// define( 'DB_NAME', 'flieberc_WPEXH' );
 
 /** Usuário do banco de dados MySQL */
 define( 'DB_USER', 'root' );
+// define( 'DB_USER', 'flieberc_WPEXH' );
 
 /** Senha do banco de dados MySQL */
 define( 'DB_PASSWORD', 'root' );
+// define( 'DB_PASSWORD', 'i33lE223Dc32nmMVk123#mudar' );
 
 /** Nome do host do MySQL */
 define( 'DB_HOST', 'localhost' );
+// define( 'DB_HOST', '67.222.38.64' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8mb4' );
+// define( 'DB_CHARSET', 'utf8mb4' );
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
+// define('DB_COLLATE', '');
 define('DB_COLLATE', '');
 
 /**#@+

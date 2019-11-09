@@ -1,8 +1,8 @@
 <header>
-  <div class="container">
+  <div class='container'>
     <div class='content'>
       <div class='logo'>
-        Logo
+        <img src='<?php bloginfo('template_url'); ?>/images/logo_Flieber.svg' alt='Flieber'/>
       </div>
       <nav>
         <ul>

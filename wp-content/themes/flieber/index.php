@@ -144,5 +144,132 @@
   </section>
   <!-- LOGOS -->
 
+  <!-- DEPOIMENTOS -->
+  <section class="depoiments">
+    <div class="container">
+      <div class="content">
+        <div class="slider-nav">
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_man1.jpg" alt="" />
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_woman1.jpg" alt="" />
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_man2.jpg" alt="" />
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_woman2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slider-for">
+          <div class="depoiments__item">
+            <p>
+              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
+              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
+            </p>
+            <h3>CCO - Luiz Carlos Full Campos</h3>
+            <h4>Head Clicks LLC</h4>
+          </div>
+          <div class="depoiments__item">
+            <p>
+              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
+              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
+            </p>
+            <h3>CCO - Luiz Carlos Full Campos</h3>
+            <h4>Head Clicks LLC</h4>
+          </div>
+          <div class="depoiments__item">
+            <p>
+              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
+              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
+            </p>
+            <h3>CCO - Luiz Carlos Full Campos</h3>
+            <h4>Head Clicks LLC</h4>
+          </div>
+          <div class="depoiments__item">
+            <p>
+              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
+              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
+            </p>
+            <h3>CCO - Luiz Carlos Full Campos</h3>
+            <h4>Head Clicks LLC</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DEPOIMENTOS -->
+
+  <!-- TRANSPORTS -->
+  <section class="transports">
+    <div class="container">
+      <div class="content">
+        <div class="slider-nav">
+          <div class="transports__item">
+            <h3>Ocean Shipping</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur dmop adipiscing Integer aliquam urna. Lorem ipsum dolor sit amet, consectetur dmop adipiscing Integer aliquam urna. g Integer aliquam urna. Lorem ipsum dolor sit amet, consectetur dmop a Integer.
+            </p>
+            <button>Learn more</button>
+          </div>
+          <div class="transports__item">
+            <h3>Air Freight</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur dmop adipiscing Integer aliquam urna. Lorem ipsum dolor sit amet, consectetur dmop adipiscing Integer aliquam urna. g Integer aliquam urna. Lorem ipsum dolor sit amet, consectetur dmop a Integer.
+            </p>
+            <button>Learn more</button>
+          </div>
+          <div class="transports__item">
+            <h3>Ground Transportation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur dmop adipiscing Integer aliquam urna. Lorem ipsum dolor sit amet, consectetur dmop adipiscing Integer aliquam urna. g Integer aliquam urna. Lorem ipsum dolor sit amet, consectetur dmop a Integer.
+            </p>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="slider-for">
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/transports/ocean.jpg" alt="" />
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/transports/air.jpg" alt="" />
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/transports/Ground.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TRANSPORTS -->
+
+  <!-- BLOG & NEWS -->
+  <section class="blog">
+    <div class="container">
+      <div class="blog__top">
+        <h2>Blog & News</h2>
+        <div class="blog__tabs">
+          <a href="javascript:void(0)" data-content="logistics" class="active">logistics</a>
+          <a href="javascript:void(0)" data-content="system">system</a>
+          <a href="javascript:void(0)" data-content="flieber">flieber</a>
+        </div>
+      </div>
+      <div class="blog__content active" data-anchor="logistics">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="blog__content" data-anchor="system">system</div>
+      <div class="blog__content" data-anchor="flieber">flieber</div>
+    </div>
+  </section>
+  <!-- BLOG & NEWS -->
+
 <?php get_footer(); ?>
 <!-- footer.php -->

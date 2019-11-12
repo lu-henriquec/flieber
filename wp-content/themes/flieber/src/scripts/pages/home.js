@@ -7,6 +7,7 @@ Setup(function Home() {
 
   _this.init = () => {
     _this.carrosselFeature();
+    _this.carrosselVideos();
     _this.carrosselDepoiment();
     _this.carrosselTransports();
     _this.tabs();
@@ -32,6 +33,26 @@ Setup(function Home() {
       centerMode: false,
       focusOnSelect: false,
       centerPadding: `0`
+    });
+  };
+
+  _this.carrosselVideos = () => {
+    $(".videos .slider-for").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: false,
+      asNavFor: ".videos .slider-nav"
+    });
+
+    $(".videos .slider-nav").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: ".videos .slider-for",
+      dots: true,
+      arrows: false,
+      fade: true,
+      focusOnSelect: false
     });
   };
 

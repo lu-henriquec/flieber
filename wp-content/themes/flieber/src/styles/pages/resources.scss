@@ -1,0 +1,140 @@
+@charset 'UTF-8';
+
+.page-template-resources {
+  header:not(.fixed) {
+    nav {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  main {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: solid 0 transparent;
+      border-left: solid 0 transparent;
+      border-right: solid 600px $secondary-color;
+      border-bottom: solid 400px transparent;
+      z-index: 2;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: solid 0 transparent;
+      border-left: solid 2000px #273042;
+      border-right: solid 0 transparent;
+      border-bottom: solid 900px transparent;
+      z-index: 0;
+    }
+  }
+
+  section.welcome {
+    padding-top: 70px;
+    height: 100vh;
+    max-height: 100%;
+    position: relative;
+    z-index: 1;
+
+    .container {
+      height: 100%;
+    }
+
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 55%;
+    }
+
+    h2 {
+      color: $secondary-color;
+      font-family: $second-font;
+      font-size: 44px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      margin-right: 20px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    form {
+      align-items: center;
+      border-bottom: 1px solid #5a6375;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      padding-bottom: 10px;
+      width: 100%;
+
+      input {
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        width: 80%;
+        &::placeholder {
+          color: #5a6375;
+        }
+      }
+
+      button {
+        background: $secondary-color;
+        border: 0;
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  section.blog {
+    position: relative;
+    z-index: 1;
+
+    .blog {
+      &__mask:before {
+        display: none;
+      }
+
+      &__top {
+        h2 {
+          color: #fff;
+        }
+      }
+
+      &__content {
+        flex-direction: row;
+        height: auto;
+      }
+
+      &__post {
+        max-width: 50%;
+
+        p,
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}

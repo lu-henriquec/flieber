@@ -4,6 +4,7 @@
 node_modules
 /wp-content/themes/flieber/node_modules
 /wp-content/themes/flieber/package-lock.json
+wp-content/uploads/
 wp-config.php
 
 # testing

@@ -70,16 +70,19 @@ gulp.task("scripts", ["lint"], function() {
         // resolve: {
         //   root: path.resolve("./src/scripts")
         // },
-        plugins: [
-          $.util.env.production
-            ? new webpack.webpack.optimize.UglifyJsPlugin({
-                minimize: true,
-                compress: {
-                  warnings: false
-                }
-              })
-            : $.util.noop
-        ],
+        optimization: {
+          minimize: $.util.env.production ? true : false //Update this to true or false
+        },
+        // plugins: [
+        //   $.util.env.production
+        //     ? new webpack.webpack.optimize.UglifyJsPlugin({
+        //         minimize: true,
+        //         compress: {
+        //           warnings: false
+        //         }
+        //       })
+        //     : $.util.noop
+        // ],
         devtool: $.util.env.production ? "" : "#source-map",
         mode: "development"
       })

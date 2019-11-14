@@ -25,12 +25,17 @@ footer {
   .content {
     align-items: center;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: column;
     justify-content: space-between;
   }
 
   .logo {
     width: 150px;
+    justify-self: flex-end;
+    img {
+      width: 100%;
+    }
   }
 
   .text {
@@ -38,6 +43,8 @@ footer {
   }
 
   .social {
+    align-items: center;
+    justify-self: center;
     display: flex;
 
     a {
@@ -46,6 +53,7 @@ footer {
 
     img {
       width: 25px;
+      filter: invert(1);
     }
   }
 }

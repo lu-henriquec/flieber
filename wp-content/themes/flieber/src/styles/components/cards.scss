@@ -1,0 +1,72 @@
+// WHY ==================================
+section#why {
+  background-color: #eceef0;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 0;
+  text-align: center;
+  width: 100%;
+
+  .reason {
+    font-family: $second-font;
+    text-align: center;
+
+    &__title {
+      color: #273042;
+      font-size: 38px;
+    }
+
+    &__description {
+      color: $text;
+      font-size: 20px;
+      margin: 25px 0 75px 0;
+    }
+  }
+
+  .box-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-content: space-around;
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card {
+    font-family: $second-font;
+    box-shadow: 0px 30px 22px -12px rgba(0, 0, 0, 0.26);
+    padding: 60px 25px 85px;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+    display: inline-block;
+
+    &:hover {
+      border: 2px solid $secondary-color;
+    }
+
+    @include phone {
+      margin-top: 20px;
+    }
+
+    &__icon {
+      margin: 0 auto;
+      padding: 0 0 45px 0;
+    }
+
+    &__title {
+      color: $secondary-color;
+      font-size: 36px;
+      font-weight: bold;
+      padding-bottom: 30px;
+    }
+
+    &__description {
+      color: $text;
+      line-height: 30px;
+    }
+  }
+}
+// WHY ==================================

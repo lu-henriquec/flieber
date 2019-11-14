@@ -2,14 +2,17 @@
   <div class='container'>
     <div class='content'>
       <div class='logo'>
-        <img src='<?php bloginfo('template_url'); ?>/images/logo_Flieber.svg' alt='Flieber'/>
+        <a href="<?php bloginfo('url'); ?>/">
+          <img class="logo__black" src='<?php bloginfo('template_url'); ?>/images/logo-black.png' alt='Flieber' />
+          <img class="logo__white" src='<?php bloginfo('template_url'); ?>/images/logo-white.png' alt='Flieber' />
+        </a>
       </div>
       <nav>
         <ul>
-          <li><a href='#'>Our Vision</a></li>
-          <li><a href='#'>Our Solution</a></li>
+          <li><a href='<?php bloginfo('url'); ?>/our-vision'>Our Vision</a></li>
+          <li><a href='<?php bloginfo('url'); ?>/our-solution'>Our Solution</a></li>
           <li><a href='#'>Pricing</a></li>
-          <li><a href='#'>Resources</a></li>
+          <li><a href='<?php bloginfo('url'); ?>/resources'>Resources</a></li>
           <li><a href='#'>Log in</a></li>
           <li><a href='#' class='feature'>Get Started</a></li>
         </ul>

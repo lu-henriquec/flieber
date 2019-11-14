@@ -19,6 +19,14 @@ header {
 
   .logo {
     width: 200px;
+
+    img {
+      width: 100%;
+    }
+
+    &__white {
+      display: none;
+    }
   }
 
   nav {

@@ -1,8 +1,6 @@
 import Setup from "../core";
-import "slick-carousel/slick/slick.js";
 
 Setup(function Home() {
-  console.log("Home");
   const _this = Home;
 
   _this.init = () => {

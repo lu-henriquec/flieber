@@ -1,0 +1,254 @@
+@charset 'UTF-8';
+
+.page-template-our-solution {
+  @import "../components/cards.scss";
+  header:not(.fixed) {
+    nav {
+      a {
+        color: #fff;
+      }
+    }
+
+    .logo {
+      &__black {
+        display: none;
+      }
+      &__white {
+        display: block;
+      }
+    }
+  }
+
+  // CONTENT ==================================
+  section#content {
+    position: relative;
+    z-index: 1;
+    .image {
+      background: url("./images/our-solution/bg-top.png") center center
+        no-repeat;
+      height: 1235px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      color: $secondary-color;
+      font-size: 72px;
+    }
+
+    .right {
+      .box__image {
+        order: 2;
+
+        @include phone {
+          order: 1;
+        }
+      }
+
+      .box__infos {
+        padding-right: 100px;
+
+        @include phone {
+          padding-right: 0;
+        }
+      }
+    }
+    .box {
+      &__brand {
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 250px 0 60px 0;
+      }
+
+      &__detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+        margin-bottom: 100px;
+
+        @include phone {
+          flex-direction: column;
+        }
+      }
+
+      &__title {
+        color: $secondary-color;
+        font-family: $second-font;
+        font-size: 40px;
+        font-weight: bold;
+        @include phone {
+          margin-top: 30px;
+        }
+      }
+
+      &__description {
+        color: $text;
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 70px;
+        word-break: break-all;
+        @include phone {
+          font-size: 16px;
+          margin: 30px;
+        }
+      }
+
+      &__text {
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 90px;
+        font-family: $base-font;
+      }
+
+      &__social {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 2%;
+        top: 25%;
+        z-index: 9999;
+        a {
+          margin-bottom: 30px;
+          transition: all 0.5s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      &__image {
+        width: 670px;
+        height: 450px;
+        background-color: $secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &__infos {
+        width: 670px;
+        margin-left: 100px;
+        @include phone {
+          margin-left: 0;
+          order: 2;
+          text-align: center;
+          width: auto;
+        }
+      }
+    }
+  }
+  // CONTENT ==================================
+
+  // OPTION ==============================
+  #option {
+    align-items: center;
+    display: flex;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    .image {
+      padding-right: 80px;
+      width: 100%;
+
+      @include phone {
+        margin-bottom: 30px;
+        padding-right: 0;
+      }
+    }
+
+    .option {
+      width: 650px;
+      @include phone {
+        width: 100%;
+      }
+
+      &__image {
+        height: auto;
+        margin-right: 65px;
+        width: auto;
+      }
+
+      &__box {
+        align-items: center;
+        font-family: $second-font;
+        display: flex;
+        margin-bottom: 90px;
+        .title {
+          color: $primary-color;
+          font-size: 40px;
+        }
+        &:nth-child(odd) {
+          .title {
+            color: $secondary-color;
+          }
+        }
+        @include phone {
+          text-align: center;
+          padding: 0 30px;
+
+          img {
+            margin: 0 auto;
+          }
+
+          &:nth-child(even) {
+            .title {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+
+      &__description {
+        color: $text;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  // OPTION ==============================
+
+  #why.content {
+    .reason {
+      &__title {
+        color: $secondary-color;
+      }
+    }
+
+    .card {
+      background-color: #fff;
+      text-align: left;
+      &:nth-child(even) {
+        background-color: #273042;
+
+        .card__number {
+          color: #fff;
+        }
+      }
+
+      &__number {
+        color: #161b35;
+        border-bottom: 1px solid $secondary-color;
+        font-size: 120px;
+        display: inline-block;
+        margin-bottom: 45px;
+      }
+
+      &__description {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -567,104 +567,94 @@ class WP_Related extends WP_Widget {
 		// Display the widget
 		echo '<div class="related-widget">'; ?>
 
-		<div class="row start-xs">
-			<div class="col-xs-12">
-				<p class="title-call">Posts <span class="title-call_span">relacionados</span></p>
-			</div>
+		<div class="related-widget__header">
+      <p>
+        <?php
+					$category = get_the_category($post->ID);
+					$nameCategory = $category[0]->name;
+				?>
+        <?php echo $nameCategory; ?>
+        <span>- related news</span>
+      </p>
 		</div>
 
-		<div class="row start-xs">
-			<div class="col-xs-12">
+    <div class="related-widget__list">
 
-				<?php
-				$categories = get_the_category($post->ID);
-				$first_category = $categories[0]->term_id;
-				$newQuery = array(
-					'category__in' => array($first_category),
-					'post__not_in' => array($post->ID),
-					'orderby' => 'date',
-					'order' => 'DESC',
-					'posts_per_page'=> 4,
-					'caller_get_posts'=> 1
-				);
-				$query = new WP_Query($newQuery);
-				// Check if checkbox is checked
-				if( $instance['checkimg'] && $instance['checkimg'] === '1' ) {
+      <?php
+      $categories = get_the_category($post->ID);
+      $first_category = $categories[0]->term_id;
+      $newQuery = array(
+        'category__in' => array($first_category),
+        'post__not_in' => array($post->ID),
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'posts_per_page'=> 4,
+        'caller_get_posts'=> 1
+      );
+      $query = new WP_Query($newQuery);
+      // Check if checkbox is checked
+      if( $instance['checkimg'] && $instance['checkimg'] === '1' ) {
 
-					while($query->have_posts()) : $query->the_post(); ?>
+        while($query->have_posts()) : $query->the_post(); ?>
 
-						<div class="widget-list-item">
-							<div class="img">
-								<?php if ( has_post_thumbnail() ) { ?>
-									<img src="<?php the_post_thumbnail_url('xsmall-item'); ?>" width="72" height="72" alt=""/>
-								<?php } ?>
-							</div>
-							<div class="content-infos">
-								<a href="<?php the_permalink(); ?>" rel="bookmark">
-									<p class="date">
-										<?php
-											$category = get_the_category();
-											echo $nameCategory = $category[0]->name . '&nbsp;';
-											the_time( 'd/m/Y H:i' );
-										?>
-									</p>
-									<h2 class="info-title">
-										<?php
-											$title = get_the_title();
-											$shortTitle = wp_trim_words( $title, 5, '...' );
-											echo $shortTitle;
-										?>
-									</h2>
-									<p class="content-text">
-										<?php
-											$content = get_the_content();
-											$shortContent = wp_trim_words( $content, 8, '...' );
-											echo $shortContent;
-										?>
-									</p>
-								</a>
-							</div>
-						</div>
+          <div class="related-widget__item">
+            <a href="<?php the_permalink(); ?>" rel="bookmark">
+              <?php if ( has_post_thumbnail() ) { ?>
+                <img src="<?php the_post_thumbnail_url('banner-slide'); ?>" alt=""/>
+              <?php } ?>
+              <div class="date">
+                <?php
+                  the_time( 'j F / Y' );
+                ?>
+              </div>
+              <h2>
+                <?php
+                  $title = get_the_title();
+                  $shortTitle = wp_trim_words( $title, 5, '...' );
+                  echo $title;
+                ?>
+              </h2>
+            </a>
+          </div>
 
-					<?php endwhile;
+        <?php endwhile;
 
-				} else {
+      } else {
 
-					while($query->have_posts()) : $query->the_post(); ?>
+        while($query->have_posts()) : $query->the_post(); ?>
 
-						<div class="widget-list-item no-image">
-							<div class="content-infos">
-								<a href="<?php the_permalink(); ?>" rel="bookmark">
-									<p class="date">
-										<?php
-											$category = get_the_category();
-											echo $nameCategory = $category[0]->name . '&nbsp;';
-											the_time( 'd/m/Y H:i' );
-										?>
-									</p>
-									<h2 class="info-title">
-										<?php
-											$title = get_the_title();
-											$shortTitle = wp_trim_words( $title, 5, '...' );
-											echo $shortTitle;
-										?>
-									</h2>
-									<p class="content-text">
-										<?php
-											$content = get_the_content();
-											$shortContent = wp_trim_words( $content, 12, '...' );
-											echo $shortContent;
-										?>
-									</p>
-								</a>
-							</div>
-						</div>
+          <div class="widget-list-item no-image">
+            <div class="content-infos">
+              <a href="<?php the_permalink(); ?>" rel="bookmark">
+                <p class="date">
+                  <?php
+                    $category = get_the_category();
+                    echo $nameCategory = $category[0]->name . '&nbsp;';
+                    the_time( 'd/m/Y H:i' );
+                  ?>
+                </p>
+                <h2 class="info-title">
+                  <?php
+                    $title = get_the_title();
+                    $shortTitle = wp_trim_words( $title, 5, '...' );
+                    echo $shortTitle;
+                  ?>
+                </h2>
+                <p class="content-text">
+                  <?php
+                    $content = get_the_content();
+                    $shortContent = wp_trim_words( $content, 12, '...' );
+                    echo $shortContent;
+                  ?>
+                </p>
+              </a>
+            </div>
+          </div>
 
-					<?php endwhile;
+        <?php endwhile;
 
-				} ?>
-			</div>
-		</div>
+      } ?>
+    </div>
 		<?php echo '</div>';
 	}
 

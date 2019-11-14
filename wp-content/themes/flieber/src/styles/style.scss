@@ -2,11 +2,16 @@
 
 @import "./base/fonts";
 @import "./base/global";
+@import "./base/responsive";
 
 @import "./components/container";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/tabs";
+@import "./components/related-widget";
 
 @import "./pages/home";
 @import "./pages/resources";
+@import "./pages/post";
+@import "./pages/our-vision";
+@import "./pages/our-solution";

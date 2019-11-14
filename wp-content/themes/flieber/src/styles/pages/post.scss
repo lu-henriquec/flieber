@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-.page-template-resources {
+.single {
   header:not(.fixed) {
     nav {
       a {
@@ -116,33 +116,33 @@
     }
   }
 
-  section.blog {
+  .post {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 40px;
+    align-items: flex-start;
+
     position: relative;
     z-index: 1;
 
-    .blog {
-      &__mask:before {
-        display: none;
+    .intro {
+      color: #fff;
+      font-family: $second-font;
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 80px;
+      width: 30%;
+    }
+
+    .conteudo__top {
+      img {
+        width: 100%;
       }
 
-      &__top {
-        h2 {
-          color: #fff;
-        }
-      }
-
-      &__content {
-        flex-direction: row;
-        height: auto;
-      }
-
-      &__post {
-        max-width: 50%;
-
-        p,
-        a {
-          display: block;
-        }
+      .date {
+        color: $text;
+        display: block;
+        margin: 15px 0 25px;
       }
     }
   }

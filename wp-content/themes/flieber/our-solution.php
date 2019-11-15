@@ -11,7 +11,7 @@
     <div class="image"></div>
       <div class="box">
         <div class="box__brand">
-            <h1>Our Vision</h1>
+            <h1>Our Solution</h1>
 
             <p class="box__text">
               Retailers always want to sell more. But to<br />

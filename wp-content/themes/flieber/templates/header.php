@@ -11,7 +11,7 @@
         <ul>
           <li><a href='<?php bloginfo('url'); ?>/our-vision'>Our Vision</a></li>
           <li><a href='<?php bloginfo('url'); ?>/our-solution'>Our Solution</a></li>
-          <li><a href='#'>Pricing</a></li>
+          <li><a href='<?php bloginfo('url'); ?>/pricing'>Pricing</a></li>
           <li><a href='<?php bloginfo('url'); ?>/resources'>Resources</a></li>
           <li><a href='#'>Log in</a></li>
           <li><a href='#' class='feature'>Get Started</a></li>

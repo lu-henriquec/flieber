@@ -3,9 +3,11 @@
 # dependencies
 node_modules
 /wp-content/themes/flieber/node_modules
+/wp-content/themes/flieber/js
 /wp-content/themes/flieber/package-lock.json
-wp-content/uploads/
-wp-config.php
+/wp-content/uploads/
+/wp-content/plugins/
+/wp-config.php
 
 # testing
 /coverage

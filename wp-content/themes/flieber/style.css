@@ -732,7 +732,7 @@ section.blog {
     color: #fff;
     font-size: 16px;
     padding: 12px 0;
-    width: 100%; }
+    width: 100% !important; }
     .contact-form input:not([type="submit"])::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
       color: #5a6375; }
     .contact-form input:not([type="submit"])::-moz-placeholder, .contact-form textarea::-moz-placeholder {
@@ -773,6 +773,8 @@ section.blog {
     border: none;
     color: #fff;
     padding: 0; }
+  .contact-form .wpcf7 .screen-reader-response {
+    display: none !important; }
 
 /* Slider */
 .slick-slider {

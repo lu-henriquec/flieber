@@ -91,4 +91,6 @@
   </section>
   <!-- BLOG & NEWS -->
 
+  <?php get_template_part( 'templates/contact-form' ); ?>
+
 <?php get_footer(); ?>

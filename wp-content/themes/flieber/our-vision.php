@@ -187,6 +187,8 @@
 	</section>
   <!-- CONTENT -->
 
+  <?php get_template_part( 'templates/contact-form' ); ?>
+
 <?php get_footer(); ?>
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/app-our-vision.min.js"></script>

@@ -34,4 +34,14 @@
   </section>
   <!-- Feature -->
 
+  <!-- Form -->
+  <section class="contact-form">
+    <div class="container">
+      <?php echo do_shortcode('[contact-form-7 id="20" title="Pricing Form"]'); ?>
+    </div>
+  </section>
+  <!-- Form -->
+
 <?php get_footer(); ?>
+
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/app-pricing.min.js"></script>

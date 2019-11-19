@@ -12,10 +12,7 @@ get_header(); ?>
       <div class="content">
         <h2>Welcome to Our Blog, It's Good to see You</h2>
         <p>Welcome to the Flieber way of doing things. Subscribe to our blog!</p>
-        <form>
-          <input type="text" placeholder="email" />
-          <button type="submit">Subscribe</button>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="21" title="Newsletter"]'); ?>
       </div>
     </div>
   </section>

@@ -53,7 +53,7 @@
   section.welcome {
     padding-top: 70px;
     height: 100vh;
-    max-height: 100%;
+    max-height: 665px;
     position: relative;
     z-index: 1;
 
@@ -103,7 +103,7 @@
         }
       }
 
-      button {
+      input[type="submit"] {
         background: $secondary-color;
         border: 0;
         border-radius: 50px;
@@ -112,6 +112,32 @@
         font-weight: bold;
         padding: 10px 20px;
         text-transform: uppercase;
+      }
+
+      .wpcf7-not-valid-tip {
+        color: #f49a9a;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      input.wpcf7-not-valid {
+        // background: #fff0f0;
+        border-color: #f49a9a;
+        // color: #f49a9a;
+      }
+
+      .wpcf7-validation-errors {
+        display: none !important;
+      }
+
+      .wpcf7-mail-sent-ok {
+        border: none;
+        color: #fff;
+        padding: 0;
+      }
+
+      .wpcf7 .screen-reader-response {
+        display: none !important;
       }
     }
   }

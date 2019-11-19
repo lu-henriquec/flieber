@@ -304,58 +304,102 @@
       </div>
       <div class="blog__mask">
         <div class="blog__content active" data-anchor="logistics">
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
-          <div class="blog__post">
-            <img src="<?php bloginfo('template_url'); ?>/images/img-bloco.png" alt="" />
-            <div class="data">21 december / 2019</div>
-            <h3>Optimize Product Profitability</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere. Maecenas accumsan vel sapien non euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed nisi laoreet, gravida purus in, accumsan nisl. Curabitur dignissim scelerisque quam eu posuere.</p>
-            <a>Learn More</a>
-          </div>
+        <?php
+
+          global $post;
+          $args = array( 'posts_per_page' => 6, 'category' => 2, 'orderby' => 'date', 'order' => 'DESC', );
+
+          $myposts = get_posts( $args );
+          foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+            <div class="blog__post">
+              <?php
+                //check if the post has a Post Thumbnail assigned to it.
+                if ( has_post_thumbnail() ) { ?>
+                  <img src="<?php the_post_thumbnail_url('list-item'); ?>" alt="<?php the_title(); ?>"/>
+                <?php }
+              ?>
+              <div class="data">
+                <?php
+                  the_time( 'j F / Y' );
+                ?>
+              </div>
+              <h3><?php the_title(); ?></h3>
+              <p>
+                <?php the_excerpt(); ?>
+              </p>
+              <a href="<?php the_permalink(); ?>">
+                Learn More
+              </a>
+            </div>
+          <?php
+            endforeach;
+            wp_reset_postdata();
+          ?>
         </div>
-        <div class="blog__content" data-anchor="system">system</div>
-        <div class="blog__content" data-anchor="flieber">flieber</div>
+        <div class="blog__content" data-anchor="system">
+          <?php
+
+            global $post;
+            $args = array( 'posts_per_page' => 6, 'category' => 3, 'orderby' => 'date', 'order' => 'DESC', );
+
+            $myposts = get_posts( $args );
+            foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+              <div class="blog__post">
+                <?php
+                  //check if the post has a Post Thumbnail assigned to it.
+                  if ( has_post_thumbnail() ) { ?>
+                    <img src="<?php the_post_thumbnail_url('list-item'); ?>" alt="<?php the_title(); ?>"/>
+                  <?php }
+                ?>
+                <div class="data">
+                  <?php
+                    the_time( 'j F / Y' );
+                  ?>
+                </div>
+                <h3><?php the_title(); ?></h3>
+                <p>
+                  <?php the_excerpt(); ?>
+                </p>
+                <a href="<?php the_permalink(); ?>">
+                  Learn More
+                </a>
+              </div>
+            <?php endforeach;
+            wp_reset_postdata();?>
+        </div>
+        <div class="blog__content" data-anchor="flieber">
+          <?php
+
+            global $post;
+            $args = array( 'posts_per_page' => 6, 'category' => 4, 'orderby' => 'date', 'order' => 'DESC', );
+
+            $myposts = get_posts( $args );
+            foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+              <div class="blog__post">
+                <?php
+                  //check if the post has a Post Thumbnail assigned to it.
+                  if ( has_post_thumbnail() ) { ?>
+                    <img src="<?php the_post_thumbnail_url('list-item'); ?>" alt="<?php the_title(); ?>"/>
+                  <?php }
+                ?>
+                <div class="data">
+                  <?php
+                    the_time( 'j F / Y' );
+                  ?>
+                </div>
+                <h3><?php the_title(); ?></h3>
+                <p>
+                  <?php the_excerpt(); ?>
+                </p>
+                <a href="<?php the_permalink(); ?>">
+                  Learn More
+                </a>
+              </div>
+          <?php
+              endforeach;
+              wp_reset_postdata();
+          ?>
+        </div>
       </div>
     </div>
   </section>

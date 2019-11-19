@@ -184,7 +184,7 @@ add_image_size('banner-slide', 1180, 585, true);
 add_image_size('post-thumb', 1180, 400, true);
 add_image_size('large-item', 780, 300, true);
 add_image_size('medium-item', 580, 300, true);
-add_image_size('list-item', 460, 225, true);
+add_image_size('list-item', 600, 345, true);
 add_image_size('small-item', 380, 300, true);
 add_image_size('xsmall-item', 300, 300, true);
 

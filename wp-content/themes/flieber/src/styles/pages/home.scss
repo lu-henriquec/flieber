@@ -5,15 +5,19 @@
 .home {
   section.feature {
     background: $secondary-color;
-    height: 100vh;
-    max-height: 100%;
+    height: size(600, 14);
+    // max-height: 100%;
+
+    @include widescreen {
+      height: size(900);
+    }
 
     .container {
       height: 100%;
     }
 
     .content {
-      align-items: center;
+      align-items: flex-end;
       display: grid;
       grid-template-columns: 40% 60%;
       height: 100%;
@@ -24,17 +28,18 @@
     }
 
     .slider-nav {
+      padding-bottom: 60px;
       h2 {
         color: $primary-color;
         font-family: $second-font;
-        font-size: 35px;
+        font-size: size(35);
         line-height: 44px;
-        margin-bottom: 20px;
+        margin-bottom: size(20);
       }
 
       p {
         color: #fff;
-        font-size: 22px;
+        font-size: size(22);
         line-height: 30px;
         margin-bottom: 20px;
       }
@@ -45,7 +50,7 @@
         border-radius: 50px;
         color: #fff;
         display: block;
-        font-size: 16px;
+        font-size: size(16);
         font-weight: bold;
         padding: 15px 30px;
         text-transform: uppercase;
@@ -53,10 +58,13 @@
     }
 
     .slider-mask {
-      align-items: flex-end;
       background: transparent url("./images/features/moldura_macbook.png")
         bottom center no-repeat;
       background-size: 100% 100%;
+
+      @include lg-desktop {
+        align-self: flex-end;
+      }
 
       @include phone {
         display: none;
@@ -66,14 +74,21 @@
     .slider-for {
       margin: 0 auto 37px;
       height: 100%;
-      max-height: 510px;
+      max-height: size(670);
       max-width: 86%;
       padding-top: 4px;
       width: 100%;
 
+      @include lg-desktop {
+        max-height: size(450);
+      }
+
       & > div {
         height: 100%;
-        max-height: 510px;
+        max-height: size(670);
+        @include lg-desktop {
+          max-height: size(450);
+        }
       }
 
       img {
@@ -113,7 +128,8 @@
   }
 
   section.videos {
-    background: #273042;
+    background: #333e54;
+    padding-top: size(30);
 
     .container {
       height: 100%;
@@ -223,17 +239,17 @@
   }
 
   section.advantages {
-    padding-top: 100px;
+    padding: 100px 0 size(50);
     background: linear-gradient(
       to top left,
-      #fff 0%,
-      #fff 50%,
-      #273042 50%,
-      #273042 100%
+      #eceef0 0%,
+      #eceef0 50%,
+      #333e54 50%,
+      #333e54 100%
     );
 
     .container {
-      max-width: 1200px;
+      max-width: size(1000, 14);
     }
 
     h2 {
@@ -257,7 +273,7 @@
       align-items: stretch;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 50px;
+      grid-gap: size(70);
 
       @include phone {
         grid-template-columns: 1fr;
@@ -267,35 +283,42 @@
 
     .box {
       background: #fff;
-      box-shadow: 0px 50px 35px -25px rgba(0, 0, 0, 0.5);
-      padding: 30px 35px;
+      box-shadow: 0px 50px 35px -25px rgba(0, 0, 0, 0.2);
+      height: size(400, 14);
+      padding: 30px 18px;
       text-align: center;
 
-      img {
+      &__image {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 115px;
         margin-bottom: 15px;
+        width: 100%;
       }
 
       h3 {
         color: $secondary-color;
-        font-size: 36px;
+        font-size: size(36);
         margin-bottom: 15px;
       }
 
       p {
         color: $text;
-        font-size: 20px;
+        font-size: size(18);
       }
     }
 
     .button {
       background: #19254f;
+      border: 0;
       border-radius: 50px;
       color: #fff;
       display: block;
       font-size: 18px;
       font-weight: bold;
       line-height: 18px;
-      margin: 150px auto 50px;
+      margin: size(50) auto 0;
       padding: 20px 40px;
       text-transform: uppercase;
     }
@@ -306,6 +329,10 @@
 
     @include phone {
       padding: 30px 0;
+    }
+
+    .container {
+      max-width: 85%;
     }
 
     .content {
@@ -417,8 +444,8 @@
     .slider-nav {
       align-items: center;
       align-self: stretch;
-      background: rgba(25, 37, 79, 0.3) url("./images/transports/bg.png") center
-        left no-repeat;
+      background: rgba(25, 37, 79, 0.3) url("./images/transports/bg-v2.png")
+        center left no-repeat;
       background-size: cover;
       display: flex;
       flex-flow: wrap-reverse;
@@ -496,6 +523,24 @@
         border: none;
         color: #535a67;
         padding: 15px;
+      }
+    }
+  }
+
+  section.blog {
+    .container {
+      max-width: 85%;
+
+      @include phone {
+        max-width: 100%;
+      }
+    }
+
+    .blog {
+      &__top {
+        h2 {
+          width: 30%;
+        }
       }
     }
   }

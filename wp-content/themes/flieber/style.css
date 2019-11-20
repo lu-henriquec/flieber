@@ -472,12 +472,12 @@ button {
 
 .container {
   margin: 0 auto;
-  max-width: 1740px;
-  padding: 0 10px;
+  max-width: 108.75em;
+  padding: 0 1.875em;
   width: 100%; }
 
 header {
-  padding: 15px 0;
+  padding: 0.9375em 0;
   position: fixed;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
@@ -494,7 +494,7 @@ header {
     -webkit-box-pack: justify;
             justify-content: space-between; }
   header .logo {
-    width: 200px; }
+    width: 12.5em; }
     header .logo img {
       width: 100%; }
     header .logo__white {
@@ -509,19 +509,21 @@ header {
     margin: 0;
     padding: 0; }
   header nav li {
-    margin: 0 25px; }
+    margin: 0 1.5625em; }
+    header nav li:last-child {
+      margin: 0; }
   header nav a {
     color: #19254f;
-    font-size: 18px; }
+    font-size: 1.125em; }
     header nav a.feature {
       background: #19254f;
       border-radius: 50px;
       color: #fff !important;
       display: block;
-      font-size: 18px;
+      font-size: 1.125em;
       font-weight: bold;
-      line-height: 18px;
-      padding: 20px 40px;
+      line-height: 1.125em;
+      padding: 0.625em 1.5625em;
       text-transform: uppercase; }
     header nav a:hover {
       text-decoration: underline; }
@@ -686,7 +688,8 @@ section.blog {
             flex-direction: column;
     height: 700px;
     flex-wrap: wrap;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    margin: 0 -30px; }
     section.blog .blog__content > div {
       align-self: flex-start; }
     section.blog .blog__content.active {
@@ -770,7 +773,7 @@ section.blog {
     margin-bottom: 40px; }
 
 .contact-form {
-  background: #273042;
+  background: #333e54;
   padding: 35px 0; }
   .contact-form .container {
     max-width: 600px; }
@@ -904,52 +907,51 @@ section.blog {
 
 .home section.feature {
   background: #2ea6d0;
-  height: 100vh;
-  max-height: 100%; }
+  height: 42.85714em; }
   .home section.feature .container {
     height: 100%; }
   .home section.feature .content {
-    -webkit-box-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+            align-items: flex-end;
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100%; }
-  .home section.feature .slider-nav h2 {
-    color: #19254f;
-    font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
-    font-size: 35px;
-    line-height: 44px;
-    margin-bottom: 20px; }
-  .home section.feature .slider-nav p {
-    color: #fff;
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 20px; }
-  .home section.feature .slider-nav button {
-    background: #19254f;
-    border: 0;
-    border-radius: 50px;
-    color: #fff;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 15px 30px;
-    text-transform: uppercase; }
+  .home section.feature .slider-nav {
+    padding-bottom: 60px; }
+    .home section.feature .slider-nav h2 {
+      color: #19254f;
+      font-family: "Keep Calm Med", "Helvetica Neue", Arial, sans-serif;
+      font-size: 2.1875em;
+      line-height: 44px;
+      margin-bottom: 1.25em; }
+    .home section.feature .slider-nav p {
+      color: #fff;
+      font-size: 1.375em;
+      line-height: 30px;
+      margin-bottom: 20px; }
+    .home section.feature .slider-nav button {
+      background: #19254f;
+      border: 0;
+      border-radius: 50px;
+      color: #fff;
+      display: block;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 15px 30px;
+      text-transform: uppercase; }
   .home section.feature .slider-mask {
-    -webkit-box-align: end;
-            align-items: flex-end;
     background: transparent url("./images/features/moldura_macbook.png") bottom center no-repeat;
     background-size: 100% 100%; }
   .home section.feature .slider-for {
     margin: 0 auto 37px;
     height: 100%;
-    max-height: 510px;
+    max-height: 41.875em;
     max-width: 86%;
     padding-top: 4px;
     width: 100%; }
     .home section.feature .slider-for > div {
       height: 100%;
-      max-height: 510px; }
+      max-height: 41.875em; }
     .home section.feature .slider-for img {
       width: 100%;
       height: 100%;
@@ -973,7 +975,8 @@ section.blog {
       width: 50px; }
 
 .home section.videos {
-  background: #273042; }
+  background: #333e54;
+  padding-top: 1.875em; }
   .home section.videos .container {
     height: 100%;
     position: relative; }
@@ -1035,11 +1038,11 @@ section.blog {
       width: 50px; }
 
 .home section.advantages {
-  padding-top: 100px;
-  background: -webkit-gradient(linear, right bottom, left top, from(#fff), color-stop(50%, #fff), color-stop(50%, #273042), to(#273042));
-  background: linear-gradient(to top left, #fff 0%, #fff 50%, #273042 50%, #273042 100%); }
+  padding: 100px 0 3.125em;
+  background: -webkit-gradient(linear, right bottom, left top, from(#eceef0), color-stop(50%, #eceef0), color-stop(50%, #333e54), to(#333e54));
+  background: linear-gradient(to top left, #eceef0 0%, #eceef0 50%, #333e54 50%, #333e54 100%); }
   .home section.advantages .container {
-    max-width: 1200px; }
+    max-width: 71.42857em; }
   .home section.advantages h2 {
     color: #2ea6d0;
     font-size: 34px; }
@@ -1054,35 +1057,48 @@ section.blog {
             align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px; }
+    grid-gap: 4.375em; }
   .home section.advantages .box {
     background: #fff;
-    box-shadow: 0px 50px 35px -25px rgba(0, 0, 0, 0.5);
-    padding: 30px 35px;
+    box-shadow: 0px 50px 35px -25px rgba(0, 0, 0, 0.2);
+    height: 28.57143em;
+    padding: 30px 18px;
     text-align: center; }
-    .home section.advantages .box img {
-      margin-bottom: 15px; }
+    .home section.advantages .box__image {
+      -webkit-box-align: center;
+              align-items: center;
+      display: -webkit-box;
+      -js-display: flex;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      height: 115px;
+      margin-bottom: 15px;
+      width: 100%; }
     .home section.advantages .box h3 {
       color: #2ea6d0;
-      font-size: 36px;
+      font-size: 2.25em;
       margin-bottom: 15px; }
     .home section.advantages .box p {
       color: #858a8f;
-      font-size: 20px; }
+      font-size: 1.125em; }
   .home section.advantages .button {
     background: #19254f;
+    border: 0;
     border-radius: 50px;
     color: #fff;
     display: block;
     font-size: 18px;
     font-weight: bold;
     line-height: 18px;
-    margin: 150px auto 50px;
+    margin: 3.125em auto 0;
     padding: 20px 40px;
     text-transform: uppercase; }
 
 .home section.marcas {
   padding: 100px 0; }
+  .home section.marcas .container {
+    max-width: 85%; }
   .home section.marcas .content {
     -webkit-box-align: center;
             align-items: center;
@@ -1146,7 +1162,7 @@ section.blog {
   -webkit-box-align: center;
           align-items: center;
   align-self: stretch;
-  background: rgba(25, 37, 79, 0.3) url("./images/transports/bg.png") center left no-repeat;
+  background: rgba(25, 37, 79, 0.3) url("./images/transports/bg-v2.png") center left no-repeat;
   background-size: cover;
   display: -webkit-box;
   -js-display: flex;
@@ -1208,6 +1224,12 @@ section.blog {
     border: none;
     color: #535a67;
     padding: 15px; }
+
+.home section.blog .container {
+  max-width: 85%; }
+
+.home section.blog .blog__top h2 {
+  width: 30%; }
 
 .page-template-resources header:not(.fixed) nav a {
   color: #fff; }
@@ -1848,7 +1870,7 @@ section.blog {
     font-size: 20px; }
 
 .contact-form {
-  background: #273042;
+  background: #333e54;
   padding: 35px 0; }
   .contact-form .container {
     max-width: 600px; }
@@ -2072,9 +2094,14 @@ section.blog {
     .page-template-pricing .contact-form .slide__content label span {
       color: #5a6375;
       text-decoration: underline; }
+    @media (min-width: 1370px) {
+    .container {
+      max-width: 137.14286em; }
+    .home section.feature {
+      height: 56.25em; } }
     @media (min-width: 320px) and (max-width: 768px) {
       header .logo {
-        width: 100px; }
+        width: 6.25em; }
     header nav {
       background: #fff;
       height: 100%;
@@ -2157,6 +2184,8 @@ section.blog {
       padding: 10px; }
     .home section.transports .slick-dots {
       margin-left: 0; }
+    .home section.blog .container {
+      max-width: 100%; }
       .page-template-resources main:before {
         border-right: solid 200px #2ea6d0;
         border-bottom: solid 100px transparent; }
@@ -2283,5 +2312,12 @@ section.blog {
             margin: 0 auto; }
           .page-template-our-solution #option .option__box:nth-child(even) .title {
             color: #2ea6d0; } }
+    @media (min-width: 1200px) and (max-width: 1370px) {
+      .home section.feature .slider-mask {
+        align-self: flex-end; }
+      .home section.feature .slider-for {
+        max-height: 28.125em; }
+        .home section.feature .slider-for > div {
+          max-height: 28.125em; } }
 
 /*# sourceMappingURL=style.css.map */

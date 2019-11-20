@@ -67,6 +67,7 @@ section.blog {
       height: 700px;
       flex-wrap: wrap;
       overflow-y: scroll;
+      margin: 0 -30px;
 
       & > div {
         align-self: flex-start;

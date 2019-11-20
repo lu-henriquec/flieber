@@ -1,4 +1,5 @@
 <?php
+define('CONCATENATE_SCRIPTS', false);
 /**
  * As configurações básicas do WordPress
  *

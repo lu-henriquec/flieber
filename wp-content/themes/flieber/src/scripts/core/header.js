@@ -6,6 +6,7 @@ Setup(function Header() {
 
   _this.init = () => {
     _this.menuScroll();
+    _this.menuMobile();
   };
 
   _this.menuScroll = () => {
@@ -15,6 +16,12 @@ Setup(function Header() {
       $(window).scrollTop() > 10
         ? header.addClass("fixed")
         : header.removeClass("fixed");
+    });
+  };
+
+  _this.menuMobile = () => {
+    $("header .menu").on("click", function() {
+      $("header").toggleClass("open");
     });
   };
 

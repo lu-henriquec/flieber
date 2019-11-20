@@ -17,6 +17,10 @@
       display: grid;
       grid-template-columns: 40% 60%;
       height: 100%;
+
+      @include phone {
+        grid-template-columns: 100%;
+      }
     }
 
     .slider-nav {
@@ -53,6 +57,10 @@
       background: transparent url("./images/features/moldura_macbook.png")
         bottom center no-repeat;
       background-size: 100% 100%;
+
+      @include phone {
+        display: none;
+      }
     }
 
     .slider-for {
@@ -118,6 +126,10 @@
       grid-template-columns: 80% 20%;
       height: 100%;
 
+      @include phone {
+        grid-template-columns: 100%;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -135,6 +147,16 @@
       top: 85px;
       width: 300px;
       z-index: 1;
+
+      @include phone {
+        position: initial;
+        padding: 10px 0;
+
+        span {
+          margin-bottom: 10px;
+          padding-left: 0;
+        }
+      }
 
       span {
         color: $secondary-color;
@@ -159,6 +181,16 @@
 
     .slider-nav {
       padding: 35px;
+
+      @include phone {
+        padding: 0;
+      }
+    }
+
+    .slider-for {
+      @include phone {
+        display: none;
+      }
     }
 
     // DOTS
@@ -215,6 +247,10 @@
       line-height: 32px;
       margin-bottom: 55px;
       max-width: 55%;
+
+      @include phone {
+        max-width: 100%;
+      }
     }
 
     .content {
@@ -222,6 +258,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 50px;
+
+      @include phone {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
     }
 
     .box {
@@ -263,10 +304,22 @@
   section.marcas {
     padding: 100px 0;
 
+    @include phone {
+      padding: 30px 0;
+    }
+
     .content {
       align-items: center;
       display: flex;
       justify-content: space-around;
+
+      @include phone {
+        flex-direction: column;
+
+        div {
+          margin: 10px 0;
+        }
+      }
     }
   }
 
@@ -280,6 +333,10 @@
       display: grid;
       grid-template-columns: 50% 50%;
       height: 100%;
+
+      @include phone {
+        grid-template-columns: 100%;
+      }
     }
 
     .slider-nav {
@@ -294,15 +351,29 @@
       background: #eceef0;
       display: flex;
       margin-top: 7%;
+
+      @include phone {
+        margin-top: 0;
+        padding: 15px 0 30px;
+      }
     }
 
     .depoiments__item {
       padding: 0 50px;
+
+      @include phone {
+        padding: 0 20px;
+      }
+
       p {
         color: #858a8f;
         font-size: 26px;
         line-height: 34px;
         margin-bottom: 20px;
+
+        @include phone {
+          font-size: 18px;
+        }
       }
 
       h3 {
@@ -328,9 +399,16 @@
       display: grid;
       grid-template-columns: 50% 50%;
       height: 100%;
+
+      @include phone {
+        grid-template-columns: 100%;
+      }
     }
 
     .slider-for {
+      @include phone {
+        display: none;
+      }
       img {
         width: 100%;
       }
@@ -348,6 +426,11 @@
 
     .transports__item {
       padding: 0 15%;
+
+      @include phone {
+        padding: 10px;
+      }
+
       p {
         color: #babdc3;
         font-size: 18px;
@@ -383,6 +466,10 @@
       flex-direction: row;
       margin-left: 15%;
       width: 100%;
+
+      @include phone {
+        margin-left: 0;
+      }
 
       li {
         position: relative;

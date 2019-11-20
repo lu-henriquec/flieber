@@ -34,6 +34,11 @@
       border-right: solid 600px $secondary-color;
       border-bottom: solid 400px transparent;
       z-index: 2;
+
+      @include phone {
+        border-right: solid 200px #2ea6d0;
+        border-bottom: solid 100px transparent;
+      }
     }
     &:after {
       content: "";
@@ -47,6 +52,10 @@
       border-right: solid 0 transparent;
       border-bottom: solid 900px transparent;
       z-index: 0;
+
+      @include phone {
+        border-bottom: solid 715px transparent;
+      }
     }
   }
 
@@ -67,6 +76,10 @@
       flex-direction: column;
       justify-content: center;
       width: 55%;
+
+      @include phone {
+        width: 100%;
+      }
     }
 
     h2 {
@@ -76,6 +89,10 @@
       font-weight: 500;
       margin-bottom: 40px;
       margin-right: 20px;
+
+      @include phone {
+        font-size: 30px;
+      }
     }
 
     p {
@@ -139,6 +156,17 @@
       .wpcf7 .screen-reader-response {
         display: none !important;
       }
+
+      @include phone {
+        .ajax-loader {
+          display: none;
+        }
+
+        input[type="submit"] {
+          font-size: 14px;
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -152,6 +180,10 @@
     position: relative;
     z-index: 1;
 
+    @include phone {
+      grid-template-columns: 100%;
+    }
+
     .intro {
       color: #fff;
       font-family: $second-font;
@@ -159,6 +191,11 @@
       font-weight: 500;
       margin-bottom: 80px;
       width: 30%;
+
+      @include phone {
+        width: 100%;
+        color: $secondary-color;
+      }
     }
 
     .conteudo__top {

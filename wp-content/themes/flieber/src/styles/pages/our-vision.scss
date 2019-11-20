@@ -35,6 +35,11 @@
     h1 {
       color: $secondary-color;
       font-size: 72px;
+
+      @include phone {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
     }
 
     .right {
@@ -59,6 +64,11 @@
         max-width: 85%;
         margin: 0 auto;
         padding: 250px 0 330px 0;
+
+        @include phone {
+          max-width: 90%;
+          padding: 50px 0;
+        }
       }
 
       &__detail {
@@ -112,6 +122,9 @@
         right: 2%;
         top: 4%;
         z-index: 9999;
+        @include phone {
+          display: none;
+        }
         a {
           margin-bottom: 30px;
           transition: all 0.5s ease;
@@ -128,6 +141,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include phone {
+          width: 100%;
+        }
 
         img {
           display: flex;

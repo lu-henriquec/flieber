@@ -17,6 +17,7 @@
           <li><a href='#' class='feature'>Get Started</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0)" class="menu"><span></span></a>
     </div>
   </div>
 </header>

@@ -121,7 +121,7 @@ gulp.task("styles", ["sasslint"], function() {
         includePaths: ["src/Styles", "node_modules/"]
       }).on("error", $.sass.logError)
     )
-    .pipe($.postcss([autoprefixer(), mqpacker({ sort: true }), flexibility()]))
+    .pipe($.postcss([autoprefixer(), mqpacker({ sort: false }), flexibility()]))
     .pipe($.sourcemaps.write("."))
     .pipe(gulp.dest("./"));
 });

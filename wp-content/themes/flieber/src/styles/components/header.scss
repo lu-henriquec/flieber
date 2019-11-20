@@ -20,6 +20,10 @@ header {
   .logo {
     width: 200px;
 
+    @include phone {
+      width: 100px;
+    }
+
     img {
       width: 100%;
     }
@@ -49,7 +53,7 @@ header {
       &.feature {
         background: $primary-color;
         border-radius: 50px;
-        color: #fff;
+        color: #fff !important;
         display: block;
         font-size: 18px;
         font-weight: bold;
@@ -60,6 +64,107 @@ header {
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+
+    @include phone {
+      background: #fff;
+      height: 100%;
+      padding: 25% 0;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+
+      ul {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+
+    span {
+      margin: 0 auto;
+      position: relative;
+      top: 12px;
+      transition: background-color 0s ease 0.2s;
+      // transition-property: background-color;
+      // transition-duration: 0s;
+      // transition-delay: 0.2s;
+
+      &,
+      &:before,
+      &:after {
+        width: 30px;
+        height: 6px;
+        background-color: $primary-color;
+        display: block;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+      }
+
+      &:before {
+        margin-top: -12px;
+        transition: margin 0.2s ease 0.2s, transform 0.2s ease;
+        // transition-property: margin, transform;
+        // transition-duration: 0.2s;
+        // transition-delay: 0.2s, 0s;
+      }
+      &:after {
+        margin-top: 12px;
+        transition: margin 0.2s ease 0.2s, transform 0.2s ease;
+        // transition-property: margin, transform;
+        // transition-duration: 0.2s;
+        // transition-delay: 0.2s, 0s;
+      }
+    }
+
+    @include phone {
+      display: inline-block;
+    }
+  }
+
+  &.open {
+    nav {
+      right: 0;
+
+      a:not(.feature) {
+        color: $primary-color !important;
+      }
+    }
+
+    .menu {
+      span {
+        background-color: rgba(0, 0, 0, 0);
+        transition-delay: 0.2s;
+
+        &:before {
+          margin-top: 0;
+          // transition-delay: 0s, 0.2s;
+          transition: margin 0.2s ease 0s, transform 0.2s ease 0.2s;
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          margin-top: 0;
+          transition: margin 0.2s ease 0s, transform 0.2s ease 0.2s;
+          // transition-delay: 0s, 0.2s;
+          transform: rotate(-45deg);
+        }
       }
     }
   }

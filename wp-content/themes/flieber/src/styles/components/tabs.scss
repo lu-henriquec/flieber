@@ -64,10 +64,10 @@ section.blog {
       display: none;
 
       flex-direction: column;
-      height: 700px;
+      height: 750px;
       flex-wrap: wrap;
       overflow-y: scroll;
-      margin: 0 -30px;
+      margin: 0;
 
       & > div {
         align-self: flex-start;
@@ -101,6 +101,9 @@ section.blog {
 
       a {
         color: $secondary-color;
+      }
+
+      .link {
         display: none;
         text-decoration: underline;
         text-transform: lowercase;
@@ -127,7 +130,7 @@ section.blog {
         max-width: 660px;
 
         p,
-        a {
+        .link {
           display: block;
         }
       }

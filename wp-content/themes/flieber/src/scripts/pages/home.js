@@ -6,6 +6,7 @@ Setup(function Home() {
   _this.init = () => {
     _this.carrosselFeature();
     _this.carrosselVideos();
+    _this.carrosselHowWeDoIt();
     _this.carrosselDepoiment();
     _this.carrosselTransports();
     _this.tabs();
@@ -32,6 +33,37 @@ Setup(function Home() {
       focusOnSelect: false,
       centerPadding: `0`
     });
+
+    var _fundo = "";
+    var _fonte = "";
+    $(".feature .slider-nav").on("beforeChange", function(
+      event,
+      slick,
+      currentSlide
+    ) {
+      if (_fundo === "#F1F1F3 50%, #2ea6d0 50%") {
+        _fundo = "#2ea6d0 50%, #F1F1F3 50%";
+        _fonte = "#ffffff";
+      } else {
+        _fundo = "#F1F1F3 50%, #2ea6d0 50%";
+        _fonte = "#2ea6d0";
+      }
+      $("section.feature").css("background-position", "right bottom");
+      setTimeout(function() {
+        $(".home section.feature .slider-nav p").css("color", _fonte);
+      }, 500);
+      setTimeout(function() {
+        $("section.feature").css("transition", "none");
+        $("section.feature").css(
+          "background",
+          "linear-gradient(to right, " + _fundo + ")"
+        );
+        $("section.feature").css("background-size", "200% 100%");
+        setTimeout(function() {
+          $("section.feature").css("transition", "all 1s ease");
+        }, 100);
+      }, 1000);
+    });
   };
 
   _this.carrosselVideos = () => {
@@ -51,6 +83,18 @@ Setup(function Home() {
       arrows: false,
       fade: true,
       focusOnSelect: false
+    });
+  };
+
+  _this.carrosselHowWeDoIt = () => {
+    $(".howwedoit .howwedoit__slider").slick({
+      centerMode: true,
+      centerPadding: "20%",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      fade: false
     });
   };
 

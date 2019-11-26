@@ -83,10 +83,10 @@
       <div class="content">
         <div class="slider-nav">
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/video.png" alt="" />
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/326585537?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
           </div>
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/video.png" alt="" />
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/337802171?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
           </div>
           <div>
             <img src="<?php bloginfo('template_url'); ?>/images/video.png" alt="" />
@@ -100,10 +100,10 @@
         </div>
         <div class="slider-for">
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/video.png" alt="" />
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/326585537?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
           </div>
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/video.png" alt="" />
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/337802171?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
           </div>
           <div>
             <img src="<?php bloginfo('template_url'); ?>/images/video.png" alt="" />
@@ -187,6 +187,94 @@
     </div>
   </section>
   <!-- Advantages -->
+
+  <!-- How We Do It -->
+  <section class="howwedoit">
+    <div class="intro">
+      <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/logo.png" class="logo" />
+      <h3 class="title">How We Do It</h3>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="howwedoit__slider">
+      <div>
+        <div class="item">
+          <div class="item__text">
+            <h4>01</h4>
+            <h3>Integrate your data</h3>
+            <p>
+              Flieber connects to your sales and fulfillment systems* to integrate the data, so that you can have a clear visibility of the sales, margin and inventory performance of your products.
+            </p>
+            <small>
+              * Currently, our system has full connection with Amazon in multiple countries. Other integrations are coming soon.
+            </small>
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/01_Integrate_Your_Data.jpg" alt="Integrate your data">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="item">
+          <div class="item__text">
+            <h4>02</h4>
+            <h3>Reduce Sales Restrictions</h3>
+            <p>
+              Our platform identifies potential and current stock-outs and overstocks, and suggests the ideal sales rhythm of each individual product, so that you release capital without losing sales.
+            </p>
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/02_Reduce_Sales_Restrictions.jpg" alt="Reduce Sales Restrictions">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="item">
+          <div class="item__text">
+            <h4>03</h4>
+            <h3>Hold The Just-Right Inventory</h3>
+            <p>
+              Our algorithms determine the ideal purchase needs and our Sales Navigation™ solution eliminates inventory restrictions and optimizes inventory cycle, working capital and margin.
+            </p>
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/03_Hold_The_Just-Right_Inventory.jpg" alt="Hold The Just-Right Inventory">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="item">
+          <div class="item__text">
+            <h4>04</h4>
+            <h3>Optimize Product Profitability</h3>
+            <p>
+              Our solution was designed to always prioritize the products that generate higher margin, so that you better allocate your capital towards profit generation.
+            </p>
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/04_Optimize_Product_Profitability.jpg" alt="Optimize Product Profitability">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="item">
+          <div class="item__text">
+            <h4>05</h4>
+            <h3>Eliminate Complexity</h3>
+            <p>
+              Our global team coordinates your supply-chain to eliminate the complexity of your operations and make it scalable. With Flieber, you become a decision-maker.
+            </p>
+          </div>
+          <div>
+            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/05_Eliminate_Complexity.jpg" alt="Eliminate Complexity">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How We Do It -->
 
   <!-- LOGOS -->
   <section class='marcas'>
@@ -335,11 +423,13 @@
                   the_time( 'j F / Y' );
                 ?>
               </div>
-              <h3><?php the_title(); ?></h3>
+              <a href="<?php the_permalink(); ?>">
+                <h3><?php the_title(); ?></h3>
+              </a>
               <p>
                 <?php the_excerpt(); ?>
               </p>
-              <a href="<?php the_permalink(); ?>">
+              <a href="<?php the_permalink(); ?>" class="link">
                 Learn More
               </a>
             </div>
@@ -368,11 +458,13 @@
                     the_time( 'j F / Y' );
                   ?>
                 </div>
-                <h3><?php the_title(); ?></h3>
+                <a href="<?php the_permalink(); ?>">
+                  <h3><?php the_title(); ?></h3>
+                </a>
                 <p>
                   <?php the_excerpt(); ?>
                 </p>
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php the_permalink(); ?>" class="link">
                   Learn More
                 </a>
               </div>
@@ -399,11 +491,13 @@
                     the_time( 'j F / Y' );
                   ?>
                 </div>
-                <h3><?php the_title(); ?></h3>
+                <a href="<?php the_permalink(); ?>">
+                  <h3><?php the_title(); ?></h3>
+                </a>
                 <p>
                   <?php the_excerpt(); ?>
                 </p>
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php the_permalink(); ?>" class="link">
                   Learn More
                 </a>
               </div>

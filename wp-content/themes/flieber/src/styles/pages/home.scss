@@ -239,17 +239,48 @@
   }
 
   section.advantages {
+    background-color: #eceef0;
     padding: 100px 0 size(50);
-    background: linear-gradient(
-      to top left,
-      #eceef0 0%,
-      #eceef0 50%,
-      #333e54 50%,
-      #333e54 100%
-    );
+    position: relative;
+
+    .bg {
+      position: absolute;
+      height: 60%;
+      left: 0;
+      top: 0;
+      width: 100%;
+
+      &:before {
+        background: #333e54 url("./images/BG_teia_home.jpg") center bottom
+          no-repeat;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      &:after {
+        background: linear-gradient(
+          to top left,
+          #eceef0 0%,
+          #eceef0 50%,
+          transparent 50%,
+          transparent 100%
+        );
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
 
     .container {
       max-width: size(1000, 14);
+      position: relative;
+      z-index: 1;
     }
 
     h2 {

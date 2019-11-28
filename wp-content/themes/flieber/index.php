@@ -122,6 +122,7 @@
 
   <!-- Advantages -->
   <section class="advantages">
+    <div class="bg"></div>
     <div class="container">
       <h2>The Flieber Advantage</h2>
       <p class='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>

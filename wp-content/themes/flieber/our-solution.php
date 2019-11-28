@@ -7,8 +7,13 @@
 <?php get_header(); ?>
 
   <!-- CONTENT -->
+  <div class="image__plx">
+    <div class="blue"></div>
+    <div class="dark"></div>
+    <div class="white"></div>
+  </div>
   <section id="content" class="content">
-    <div class="image"></div>
+    <!-- <div class="image"></div> -->
       <div class="box">
         <div class="box__brand">
             <h1>Our Solution</h1>

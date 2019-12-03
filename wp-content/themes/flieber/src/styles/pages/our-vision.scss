@@ -76,7 +76,8 @@
         background: transparent url("./images/BG_Globo_vision.jpg") center left
           no-repeat;
         background-attachment: fixed;
-        background-size: contain;
+        background-size: 70%;
+        background-position: -60px 6rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -119,6 +120,7 @@
       }
 
       .box__infos {
+        margin-left: 0;
         padding-right: 100px;
 
         @include phone {
@@ -130,7 +132,7 @@
       &__brand {
         max-width: 85%;
         margin: 0 auto;
-        padding: 250px 0 330px 0;
+        padding: 200px 0 380px 0;
 
         @include phone {
           max-width: 90%;
@@ -155,7 +157,7 @@
       &__title {
         color: $secondary-color;
         font-family: $second-font;
-        font-size: 40px;
+        font-size: size(40);
         font-weight: bold;
         @include phone {
           margin-top: 30px;
@@ -164,7 +166,7 @@
 
       &__description {
         color: $text;
-        font-size: 24px;
+        font-size: size(24);
         line-height: 40px;
         margin-top: 70px;
         word-break: break-all;
@@ -176,7 +178,7 @@
 
       &__text {
         color: #fff;
-        font-size: 20px;
+        font-size: size(20);
         line-height: 40px;
         margin-top: 90px;
         font-family: $base-font;
@@ -242,7 +244,7 @@
       color: #fff;
       text-align: center;
       font-family: $second-font;
-      font-size: 40px;
+      font-size: size(40);
       padding: 158px 0;
 
       @include phone {

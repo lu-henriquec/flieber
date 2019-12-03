@@ -12,7 +12,7 @@
     <div class="dark"></div>
     <div class="white"></div>
   </div>
-	<section id="content" class="feature">
+	<section id="content" class="feature container">
 
 		<div class="box">
 

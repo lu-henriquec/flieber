@@ -6,6 +6,11 @@
 
 <?php get_header(); ?>
 
+  <div class="image__plx">
+    <div class="blue"></div>
+    <div class="dark"></div>
+    <div class="white"></div>
+  </div>
   <!-- TOP -->
   <section class="welcome">
     <div class="container">

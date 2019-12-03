@@ -6,6 +6,12 @@
 
 <?php get_header(); ?>
 
+
+  <div class="image__plx">
+    <div class="blue"></div>
+    <div class="dark"></div>
+    <div class="white"></div>
+  </div>
   <!-- Feature -->
   <section class="feature">
     <div class="container">

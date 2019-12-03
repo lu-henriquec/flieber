@@ -28,6 +28,10 @@
       position: absolute;
       width: 100%;
 
+      @include lg-desktop() {
+        height: 130vh;
+      }
+
       @include phone {
         height: 100vh;
       }
@@ -132,7 +136,12 @@
       &__brand {
         max-width: 85%;
         margin: 0 auto;
-        padding: 200px 0 380px 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        justify-content: center;
 
         @include phone {
           max-width: 90%;
@@ -180,7 +189,7 @@
         color: #fff;
         font-size: size(20);
         line-height: 40px;
-        margin-top: 90px;
+        // margin-top: 90px;
         font-family: $base-font;
       }
 

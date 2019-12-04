@@ -94,7 +94,18 @@ Setup(function Home() {
       slidesToScroll: 1,
       arrows: false,
       dots: true,
-      fade: false
+      fade: false,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+            centerPadding: "0"
+          }
+        }
+      ]
     });
   };
 

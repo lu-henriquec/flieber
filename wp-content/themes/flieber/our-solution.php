@@ -46,7 +46,7 @@
       </div>
     </section>
 
-    <section id="option">
+    <section id="option" class="container">
       <div>
           <img src="<?php bloginfo('template_url'); ?>/images/our-solution/grafic.png" alt="Gráfico" class="image">
       </div>

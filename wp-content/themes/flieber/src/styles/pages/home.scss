@@ -12,6 +12,11 @@
       height: size(900);
     }
 
+    @include phone {
+      height: 100%;
+      padding-top: 70px;
+    }
+
     .container {
       height: 100%;
     }
@@ -123,6 +128,10 @@
         height: 3px;
         padding: 0;
         width: 50px;
+
+        @include phone {
+          width: 40px;
+        }
       }
     }
   }
@@ -234,6 +243,10 @@
         height: 3px;
         padding: 0;
         width: 50px;
+
+        @include phone {
+          width: 40px;
+        }
       }
     }
   }
@@ -405,14 +418,26 @@
 
       & > div {
         flex-basis: 50%;
+
+        @include phone {
+          flex-basis: 100%;
+        }
       }
 
       & > div:not(.item__text) {
         padding-right: 5%;
+
+        @include phone {
+          display: none;
+        }
       }
 
       &__text {
         padding: 0 2rem;
+
+        @include phone {
+          padding: 0 1rem;
+        }
       }
 
       img {
@@ -432,6 +457,10 @@
         @include lg-desktop {
           font-size: size(90);
         }
+
+        @include phone {
+          font-size: size(50);
+        }
       }
 
       h3 {
@@ -443,6 +472,10 @@
 
         @include lg-desktop {
           font-size: size(30);
+        }
+
+        @include phone {
+          font-size: size(22);
         }
       }
 
@@ -467,12 +500,20 @@
 
     .slick-slide:not(.slick-current) .item {
       transform: translateY(30%);
+
+      @include phone {
+        transform: translateY(0);
+      }
     }
 
     .slick-current {
       .item {
         background-color: #212a3d;
         transform: scale(1.2);
+
+        @include phone {
+          transform: none;
+        }
 
         h4 {
           border-color: $secondary-color;
@@ -499,6 +540,13 @@
       left: 50%;
       bottom: 30px;
       transform: translateX(-50%);
+
+      @include phone {
+        align-items: center;
+        display: flex !important;
+        justify-content: center;
+        width: 100%;
+      }
 
       li {
         display: inline-block;

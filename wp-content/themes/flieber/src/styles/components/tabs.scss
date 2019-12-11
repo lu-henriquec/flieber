@@ -69,6 +69,10 @@ section.blog {
       overflow-y: scroll;
       margin: 0;
 
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
       & > div {
         align-self: flex-start;
       }

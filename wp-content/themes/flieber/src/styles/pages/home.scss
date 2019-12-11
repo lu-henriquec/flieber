@@ -125,7 +125,7 @@
         background: #ffffff;
         border: none;
         font-size: 0;
-        height: 3px;
+        height: 2px;
         padding: 0;
         width: 50px;
 
@@ -240,7 +240,7 @@
         background: #ffffff;
         border: none;
         font-size: 0;
-        height: 3px;
+        height: 2px;
         padding: 0;
         width: 50px;
 
@@ -264,7 +264,7 @@
       width: 100%;
 
       &:before {
-        background: #333e54 url("./images/BG_teia_home.jpg") center bottom
+        background: #333e54 url("./images/BG_teia_home.jpg") center 80%
           no-repeat;
         content: "";
         height: 100%;
@@ -508,12 +508,17 @@
 
     .slick-current {
       .item {
-        background-color: #212a3d;
         transform: scale(1.2);
 
         @include phone {
           transform: none;
         }
+      }
+    }
+
+    .slick-slide:nth-child(odd) {
+      .item {
+        background-color: #212a3d;
 
         h4 {
           border-color: $secondary-color;
@@ -563,7 +568,7 @@
         background: #ffffff;
         border: none;
         font-size: 0;
-        height: 3px;
+        height: 2px;
         padding: 0;
         width: 50px;
       }
@@ -601,9 +606,15 @@
       padding: 0;
     }
 
-    .content {
+    .slider-nav {
+      img {
+        width: 100%;
+      }
+    }
+
+    .depoiments__slide {
       align-items: center;
-      display: grid;
+      display: grid !important;
       grid-template-columns: 50% 50%;
       height: 100%;
 
@@ -612,29 +623,18 @@
       }
     }
 
-    .slider-nav {
-      img {
-        width: 100%;
-      }
-    }
-
-    .slider-for {
-      align-items: center;
+    .depoiments__item {
+      align-items: flex-start;
       align-self: stretch;
+      justify-content: center;
       background: #eceef0;
       display: flex;
+      flex-direction: column;
       margin-top: 7%;
-
-      @include phone {
-        margin-top: 0;
-        padding: 15px 0 30px;
-      }
-    }
-
-    .depoiments__item {
       padding: 0 50px;
 
       @include phone {
+        margin-top: 0;
         padding: 0 20px;
       }
 
@@ -658,6 +658,45 @@
       h4 {
         color: $primary-color;
         font-size: 15px;
+      }
+    }
+
+    // DOTS
+    .slick-dots {
+      display: block !important;
+      list-style: none;
+      padding: 0;
+
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+
+      @include phone {
+        align-items: center;
+        display: flex !important;
+        justify-content: center;
+        width: 100%;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 8px;
+      }
+
+      .slick-active {
+        button {
+          background: $secondary-color;
+        }
+      }
+
+      button {
+        background: #ffffff;
+        border: none;
+        font-size: 0;
+        height: 2px;
+        padding: 0;
+        width: 50px;
       }
     }
   }

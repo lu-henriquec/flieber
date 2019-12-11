@@ -13,37 +13,37 @@
         <div>
           <div class="slider-nav">
             <div>
-              <h2>The New Way to Operate Your E-commerce</h2>
+              <h2><?php the_field('titulo_slider_1'); ?></h2>
               <p>
-                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+                <?php the_field('texto_slider_1'); ?>
               </p>
               <button>Get started</button>
             </div>
             <div>
-              <h2>2 -The New Way to Operate Your E-commerce</h2>
+              <h2><?php the_field('titulo_slider_2'); ?></h2>
               <p>
-                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+                <?php the_field('texto_slider_2'); ?>
               </p>
               <button>Get started</button>
             </div>
             <div>
-              <h2>3 -The New Way to Operate Your E-commerce</h2>
+              <h2><?php the_field('titulo_slider_3'); ?></h2>
               <p>
-                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+                <?php the_field('texto_slider_3'); ?>
               </p>
               <button>Get started</button>
             </div>
             <div>
-              <h2>4 -The New Way to Operate Your E-commerce</h2>
+              <h2><?php the_field('titulo_slider_4'); ?></h2>
               <p>
-                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+                <?php the_field('texto_slider_4'); ?>
               </p>
               <button>Get started</button>
             </div>
             <div>
-              <h2>5 -The New Way to Operate Your E-commerce</h2>
+              <h2><?php the_field('titulo_slider_5'); ?></h2>
               <p>
-                Flieber synchronizes sales and inventory cycles so that you can always sell the right product, at the right time, in the right quantity and with the right margin. It's that simple! Welcome to the Flieber way of doing things!
+                <?php the_field('texto_slider_5'); ?>
               </p>
               <button>Get started</button>
             </div>
@@ -124,8 +124,8 @@
   <section class="advantages">
     <div class="bg"></div>
     <div class="container">
-      <h2>The Flieber Advantage</h2>
-      <p class='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <h2><?php the_field('area_box_title'); ?></h2>
+      <p class='text'><?php the_field('area_box_text'); ?></p>
       <div class="content">
         <div class="box">
           <div class="box__image">
@@ -192,87 +192,68 @@
   <!-- How We Do It -->
   <section class="howwedoit">
     <div class="intro">
-      <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/logo.png" class="logo" />
-      <h3 class="title">How We Do It</h3>
+      <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/logo-v2.svg" class="logo" width='100'/>
+      <h3 class="title"><?php the_field('titulo_how_we_do'); ?></h3>
       <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <?php the_field('texto_how_we_do'); ?>
       </p>
     </div>
 
     <div class="howwedoit__slider">
-      <div>
-        <div class="item">
-          <div class="item__text">
-            <h4>01</h4>
-            <h3>Integrate your data</h3>
-            <p>
-              Flieber connects to your sales and fulfillment systems* to integrate the data, so that you can have a clear visibility of the sales, margin and inventory performance of your products.
-            </p>
-            <small>
-              * Currently, our system has full connection with Amazon in multiple countries. Other integrations are coming soon.
-            </small>
+      <?php
+        $hero = get_field('slider_how_we_do');
+        if( $hero ): ?>
+          <div>
+            <div class="item">
+              <div class="item__text">
+                <?php echo $hero['titulo_item_1']; ?>
+              </div>
+              <div>
+                <img src="<?php echo $hero['image_item_1']; ?>" />
+              </div>
+            </div>
           </div>
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/01_Integrate_Your_Data.jpg" alt="Integrate your data">
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-          <div class="item__text">
-            <h4>02</h4>
-            <h3>Reduce Sales Restrictions</h3>
-            <p>
-              Our platform identifies potential and current stock-outs and overstocks, and suggests the ideal sales rhythm of each individual product, so that you release capital without losing sales.
-            </p>
+            <div class="item">
+              <div class="item__text">
+                <?php echo $hero['titulo_item_2']; ?>
+              </div>
+              <div>
+                <img src="<?php echo $hero['image_item_2']; ?>" />
+              </div>
+            </div>
           </div>
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/02_Reduce_Sales_Restrictions.jpg" alt="Reduce Sales Restrictions">
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-          <div class="item__text">
-            <h4>03</h4>
-            <h3>Hold The Just-Right Inventory</h3>
-            <p>
-              Our algorithms determine the ideal purchase needs and our Sales Navigation™ solution eliminates inventory restrictions and optimizes inventory cycle, working capital and margin.
-            </p>
+            <div class="item">
+              <div class="item__text">
+                <?php echo $hero['titulo_item_3']; ?>
+              </div>
+              <div>
+                <img src="<?php echo $hero['image_item_3']; ?>" />
+              </div>
+            </div>
           </div>
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/03_Hold_The_Just-Right_Inventory.jpg" alt="Hold The Just-Right Inventory">
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-          <div class="item__text">
-            <h4>04</h4>
-            <h3>Optimize Product Profitability</h3>
-            <p>
-              Our solution was designed to always prioritize the products that generate higher margin, so that you better allocate your capital towards profit generation.
-            </p>
+            <div class="item">
+              <div class="item__text">
+                <?php echo $hero['titulo_item_4']; ?>
+              </div>
+              <div>
+                <img src="<?php echo $hero['image_item_4']; ?>" />
+              </div>
+            </div>
           </div>
           <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/04_Optimize_Product_Profitability.jpg" alt="Optimize Product Profitability">
+            <div class="item">
+              <div class="item__text">
+                <?php echo $hero['titulo_item_5']; ?>
+              </div>
+              <div>
+                <img src="<?php echo $hero['image_item_5']; ?>" />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-          <div class="item__text">
-            <h4>05</h4>
-            <h3>Eliminate Complexity</h3>
-            <p>
-              Our global team coordinates your supply-chain to eliminate the complexity of your operations and make it scalable. With Flieber, you become a decision-maker.
-            </p>
-          </div>
-          <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/05_Eliminate_Complexity.jpg" alt="Eliminate Complexity">
-          </div>
-        </div>
-      </div>
+      <?php endif; ?>
     </div>
   </section>
   <!-- How We Do It -->
@@ -297,52 +278,34 @@
     <div class="container">
       <div class="content">
         <div class="slider-nav">
-          <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_man1.jpg" alt="" />
-          </div>
-          <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_woman1.jpg" alt="" />
-          </div>
-          <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_man2.jpg" alt="" />
-          </div>
-          <div>
-            <img src="<?php bloginfo('template_url'); ?>/images/depoiments/img_woman2.jpg" alt="" />
-          </div>
-        </div>
-        <div class="slider-for">
-          <div class="depoiments__item">
-            <p>
-              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
-              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
-            </p>
-            <h3>CCO - Luiz Carlos Full Campos</h3>
-            <h4>Head Clicks LLC</h4>
-          </div>
-          <div class="depoiments__item">
-            <p>
-              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
-              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
-            </p>
-            <h3>CCO - Luiz Carlos Full Campos</h3>
-            <h4>Head Clicks LLC</h4>
-          </div>
-          <div class="depoiments__item">
-            <p>
-              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
-              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
-            </p>
-            <h3>CCO - Luiz Carlos Full Campos</h3>
-            <h4>Head Clicks LLC</h4>
-          </div>
-          <div class="depoiments__item">
-            <p>
-              "We have high volume products that demand frequent shipments from China. Flieber's system gives us full visibility of each order and shows the ideal date of delivery of each product.
-              I love the way their team operates to adjust the shipments so that we can always receive the products close to the ideal time."
-            </p>
-            <h3>CCO - Luiz Carlos Full Campos</h3>
-            <h4>Head Clicks LLC</h4>
-          </div>
+        <?php
+          $hero = get_field('slider_depoimentos');
+          if( $hero ): ?>
+            <div class="depoiments__slide">
+              <img src="<?php echo $hero['imagem_1']; ?>" alt="" />
+              <div class="depoiments__item">
+                <?php echo $hero['conteudo_1']; ?>
+              </div>
+            </div>
+            <div class="depoiments__slide">
+              <img src="<?php echo $hero['imagem_2']; ?>" alt="" />
+              <div class="depoiments__item">
+                <?php echo $hero['conteudo_2']; ?>
+              </div>
+            </div>
+            <div class="depoiments__slide">
+              <img src="<?php echo $hero['imagem_3']; ?>" alt="" />
+              <div class="depoiments__item">
+                <?php echo $hero['conteudo_3']; ?>
+              </div>
+            </div>
+            <div class="depoiments__slide">
+              <img src="<?php echo $hero['imagem_4']; ?>" alt="" />
+              <div class="depoiments__item">
+                <?php echo $hero['conteudo_4']; ?>
+              </div>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>

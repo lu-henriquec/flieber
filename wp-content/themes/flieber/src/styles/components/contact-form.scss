@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 .contact-form {
-  background: #333e54;
+  background: #273042;
   padding: 35px 0;
 
   .container {
@@ -20,14 +20,14 @@
   textarea {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #5a6375;
+    border-bottom: 1px solid #707b90;
     color: #fff;
     font-size: 16px;
     padding: 12px 0;
     width: 100% !important;
 
     &::placeholder {
-      color: #5a6375;
+      color: #707b90;
     }
   }
 

@@ -4,7 +4,7 @@
   align-items: center;
   background: $secondary-color url("images/mapa-bg.png") center center no-repeat;
   display: flex;
-  height: 417px;
+  height: 320px;
 
   .content {
     align-items: center;
@@ -31,7 +31,7 @@
 }
 
 footer {
-  padding: 100px 0;
+  padding: 70px 0;
 
   @include phone {
     padding: 30px 0;

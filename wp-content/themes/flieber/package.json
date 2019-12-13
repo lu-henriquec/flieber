@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "animate-sass": "tgdev/animate-sass",
+    "aos": "^3.0.0-beta.6",
     "normalize.css": "^4.1.1",
     "slick-carousel": "^1.8.1"
   },

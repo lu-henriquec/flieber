@@ -1,4 +1,5 @@
 import Setup from "../core";
+import AOS from "aos";
 
 Setup(function Home() {
   const _this = Home;
@@ -10,6 +11,8 @@ Setup(function Home() {
     _this.carrosselDepoiment();
     _this.carrosselTransports();
     _this.tabs();
+
+    AOS.init();
   };
 
   _this.carrosselFeature = () => {

@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 @import "slick-carousel/slick/slick.scss";
+@import "aos/dist/aos";
 
 .home {
   section.feature {
@@ -9,7 +10,7 @@
     // max-height: 100%;
 
     @include widescreen {
-      height: size(900);
+      height: 900px;
     }
 
     @include phone {
@@ -27,6 +28,10 @@
       grid-template-columns: 40% 60%;
       height: 100%;
 
+      @include widescreen {
+        grid-template-columns: 35% 74%;
+      }
+
       @include phone {
         grid-template-columns: 100%;
       }
@@ -34,12 +39,22 @@
 
     .slider-nav {
       padding-bottom: 60px;
+
+      @include widescreen {
+        padding-bottom: 87px;
+      }
+
       h2 {
         color: $primary-color;
         font-family: $second-font;
         font-size: size(35);
         line-height: 44px;
         margin-bottom: size(20);
+
+        @include widescreen {
+          font-size: 42px;
+          line-height: 52px;
+        }
       }
 
       p {
@@ -47,9 +62,15 @@
         font-size: size(22);
         line-height: 30px;
         margin-bottom: 20px;
+
+        @include widescreen {
+          font-size: 25px;
+          line-height: 45px;
+          margin-bottom: 55px;
+        }
       }
 
-      button {
+      .slick-slide button {
         background: #19254f;
         border: 0;
         border-radius: 50px;
@@ -59,6 +80,12 @@
         font-weight: bold;
         padding: 15px 30px;
         text-transform: uppercase;
+
+        @include widescreen {
+          font-size: 22px;
+          margin-bottom: 75px;
+          padding: 12px 40px;
+        }
       }
     }
 
@@ -69,6 +96,10 @@
 
       @include lg-desktop {
         align-self: flex-end;
+      }
+
+      @include widescreen {
+        margin-left: -60px;
       }
 
       @include phone {
@@ -88,11 +119,18 @@
         max-height: size(450);
       }
 
+      @include widescreen {
+        max-height: 700px;
+      }
+
       & > div {
         height: 100%;
         max-height: size(670);
         @include lg-desktop {
           max-height: size(450);
+        }
+        @include widescreen {
+          max-height: 700px;
         }
       }
 
@@ -180,6 +218,24 @@
         span {
           margin-bottom: 10px;
           padding-left: 0;
+        }
+      }
+
+      @include widescreen {
+        font-size: 24px;
+        right: -33px;
+        top: 120px;
+        width: 455px;
+
+        span {
+          font-size: 72px;
+          margin-bottom: 80px;
+        }
+
+        &:before {
+          left: -75px;
+          top: -55px;
+          width: 140px;
         }
       }
 
@@ -294,6 +350,10 @@
       max-width: size(1000, 14);
       position: relative;
       z-index: 1;
+
+      @include widescreen {
+        max-width: 1444px;
+      }
     }
 
     h2 {
@@ -319,6 +379,10 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: size(70);
 
+      @include widescreen {
+        grid-gap: 100px;
+      }
+
       @include phone {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -331,6 +395,11 @@
       height: size(400, 14);
       padding: 30px 18px;
       text-align: center;
+
+      @include widescreen {
+        padding: 50px 60px;
+        height: 515px;
+      }
 
       &__image {
         align-items: center;
@@ -345,11 +414,20 @@
         color: $secondary-color;
         font-size: size(36);
         margin-bottom: 15px;
+
+        @include widescreen {
+          font-size: 36px;
+        }
       }
 
       p {
         color: $text;
         font-size: size(18);
+
+        @include widescreen {
+          font-size: 20px;
+          line-height: 36px;
+        }
       }
     }
 
@@ -365,6 +443,10 @@
       margin: size(50) auto 0;
       padding: 20px 40px;
       text-transform: uppercase;
+
+      @include widescreen {
+        padding: 12px 40px;
+      }
     }
   }
 
@@ -603,6 +685,7 @@
 
   section.depoiments {
     .container {
+      max-width: 100%;
       padding: 0;
     }
 
@@ -647,17 +730,31 @@
         @include phone {
           font-size: 18px;
         }
+
+        @include widescreen {
+          font-size: 33px;
+          line-height: 54px;
+          margin-bottom: 50px;
+        }
       }
 
       h3 {
         color: $secondary-color;
         font-size: 14px;
         margin-bottom: 10px;
+
+        @include widescreen {
+          font-size: 18px;
+        }
       }
 
       h4 {
         color: $primary-color;
         font-size: 15px;
+
+        @include widescreen {
+          font-size: 19px;
+        }
       }
     }
 
@@ -703,6 +800,7 @@
 
   section.transports {
     .container {
+      max-width: 100%;
       padding: 0;
     }
 
@@ -748,6 +846,11 @@
         font-size: 18px;
         line-height: 34px;
         margin-bottom: 50px;
+
+        @include widescreen {
+          font-size: 24px;
+          line-height: 50px;
+        }
       }
 
       h3 {
@@ -756,6 +859,11 @@
         font-size: 44px;
         font-weight: 500;
         margin-bottom: 30px;
+
+        @include widescreen {
+          font-size: 60px;
+          line-height: 100px;
+        }
       }
 
       button {
@@ -765,7 +873,7 @@
         color: $primary-color;
         display: block;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 300;
         padding: 10px 40px;
         text-transform: uppercase;
       }
@@ -808,6 +916,11 @@
         border: none;
         color: #535a67;
         padding: 15px;
+
+        @include widescreen {
+          font-size: 24px;
+          padding: 15px 30px;
+        }
       }
     }
   }

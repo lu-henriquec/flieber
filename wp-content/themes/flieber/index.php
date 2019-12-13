@@ -9,7 +9,7 @@
   <!-- Feature -->
   <section class="feature">
     <div class="container">
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300">
         <div>
           <div class="slider-nav">
             <div>
@@ -76,7 +76,7 @@
   <!-- Videos -->
   <section class="videos">
     <div class="container">
-      <div class="videos__text">
+      <div class="videos__text" data-aos="fade-up-left" data-aos-delay="100">
         <span>Right Place.</span>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta cursus libero ac tincidunt.
       </div>
@@ -124,10 +124,10 @@
   <section class="advantages">
     <div class="bg"></div>
     <div class="container">
-      <h2><?php the_field('area_box_title'); ?></h2>
-      <p class='text'><?php the_field('area_box_text'); ?></p>
+      <h2 data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"><?php the_field('area_box_title'); ?></h2>
+      <p data-aos="fade-up" class='text'><?php the_field('area_box_text'); ?></p>
       <div class="content">
-        <div class="box">
+        <div class="box" data-aos="flip-left">
           <div class="box__image">
             <img src="<?php bloginfo('template_url'); ?>/images/advantages/Icon_Increase_Your_Sales.svg" width="111" height="94" />
           </div>
@@ -136,7 +136,7 @@
             Make sure you always have your products available for sale. No more stock-outs.
           <p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="flip-left" data-aos-delay="200">
           <div class="box__image">
             <img src="<?php bloginfo('template_url'); ?>/images/advantages/icon_Free-up_Trapped_Capital.svg" width="128" height="80" />
           </div>
@@ -147,7 +147,7 @@
             No more ovestocks.
           <p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="flip-left" data-aos-delay="400">
           <div class="box__image">
             <img src="<?php bloginfo('template_url'); ?>/images/advantages/icon_Increase_Your_Margin.svg" width="118" height="108" />
           </div>
@@ -156,7 +156,7 @@
             Prioritize the right products and sell the ideal quantities to optimize for margin.
           <p>
         </div>
-        <div class="box">
+        <div class="box"data-aos="flip-left">
           <div class="box__image">
             <img src="<?php bloginfo('template_url'); ?>/images/advantages/icon_Maximize_Your_Working_Capital.svg" width="111" height="111" />
           </div>
@@ -165,7 +165,7 @@
             Reduce the capital cycle of your business by streamlining your purchase-to-sales process.
           <p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="flip-left" data-aos-delay="200">
           <div class="box__image">
             <img src="<?php bloginfo('template_url'); ?>/images/advantages/icon_Reduce_Bad_Reviews.svg" width="146" height="78" />
           </div>
@@ -174,7 +174,7 @@
             Assure the quality level of your products so that bad reviews don't hurt your sales anymore.
           <p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="flip-left" data-aos-delay="400">
           <div class="box__image">
             <img src="<?php bloginfo('template_url'); ?>/images/advantages/icon_Eliminate_Your_Headaches.svg" width="100" height="101" />
           </div>
@@ -191,7 +191,7 @@
 
   <!-- How We Do It -->
   <section class="howwedoit">
-    <div class="intro">
+    <div class="intro" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50">
       <img src="<?php bloginfo('template_url'); ?>/images/how-we-do-it/logo-v2.svg" class="logo" width='100'/>
       <h3 class="title"><?php the_field('titulo_how_we_do'); ?></h3>
       <p class="description">
@@ -261,7 +261,7 @@
   <!-- LOGOS -->
   <section class='marcas'>
     <div class='container'>
-      <div class='content'>
+      <div class='content' data-aos="zoom-in">
         <div><img src="<?php bloginfo('template_url'); ?>/images/marcas/logo_NYT.png" alt="New York Times" width="200" height="29" /></div>
         <div><img src="<?php bloginfo('template_url'); ?>/images/marcas/logo_WSJ.png" alt="WSJ" width="61" height="34" /></div>
         <div><img src="<?php bloginfo('template_url'); ?>/images/marcas/business_insider.png" alt="Business Insider" width="98" height="35" /></div>
@@ -284,25 +284,33 @@
             <div class="depoiments__slide">
               <img src="<?php echo $hero['imagem_1']; ?>" alt="" />
               <div class="depoiments__item">
-                <?php echo $hero['conteudo_1']; ?>
+                <div data-aos="fade-up-right" data-aos-delay="100">
+                  <?php echo $hero['conteudo_1']; ?>
+                </div>
               </div>
             </div>
             <div class="depoiments__slide">
               <img src="<?php echo $hero['imagem_2']; ?>" alt="" />
               <div class="depoiments__item">
-                <?php echo $hero['conteudo_2']; ?>
+                <div data-aos="fade-up-right" data-aos-delay="100">
+                  <?php echo $hero['conteudo_2']; ?>
+                </div>
               </div>
             </div>
             <div class="depoiments__slide">
               <img src="<?php echo $hero['imagem_3']; ?>" alt="" />
               <div class="depoiments__item">
-                <?php echo $hero['conteudo_3']; ?>
+                <div data-aos="fade-up-right" data-aos-delay="100">
+                  <?php echo $hero['conteudo_3']; ?>
+                </div>
               </div>
             </div>
             <div class="depoiments__slide">
               <img src="<?php echo $hero['imagem_4']; ?>" alt="" />
               <div class="depoiments__item">
-                <?php echo $hero['conteudo_4']; ?>
+                <div data-aos="fade-up-right" data-aos-delay="100">
+                  <?php echo $hero['conteudo_4']; ?>
+                </div>
               </div>
             </div>
           <?php endif; ?>
@@ -315,7 +323,7 @@
   <!-- TRANSPORTS -->
   <section class="transports">
     <div class="container">
-      <div class="content">
+      <div class="content" data-aos="slide-up" data-aos-delay="100">
         <div class="slider-nav">
           <div class="transports__item">
             <h3>Ocean Shipping</h3>
@@ -358,7 +366,7 @@
   <!-- BLOG & NEWS -->
   <section class="blog">
     <div class="container">
-      <div class="blog__top">
+      <div class="blog__top" data-aos="fade-up" data-aos-delay="100">
         <h2>Blog & News</h2>
         <div class="blog__tabs">
           <a href="javascript:void(0)" data-content="logistics" class="active">logistics</a>

@@ -47,8 +47,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 60%;
-        height: 70%;
+        width: 32%;
+        height: 36%;
         z-index: 2;
 
         @include phone {
@@ -85,6 +85,29 @@
         left: 0;
         width: 100%;
         height: 100%;
+
+        @include widescreen {
+          background-size: cover;
+        }
+      }
+    }
+
+    .box__social {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 2%;
+      top: 12%;
+      z-index: 9999;
+      @include phone {
+        display: none;
+      }
+      a {
+        margin-bottom: 30px;
+        transition: all 0.5s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
@@ -145,6 +168,10 @@
           max-width: 90%;
           padding: 50px 0;
         }
+
+        @include widescreen {
+          max-width: 93%;
+        }
       }
 
       &__detail {
@@ -193,24 +220,9 @@
         @include phone {
           margin-top: 30px;
         }
-      }
 
-      &__social {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 2%;
-        top: 25%;
-        z-index: 9999;
-        @include phone {
-          display: none;
-        }
-        a {
-          margin-bottom: 30px;
-          transition: all 0.5s ease;
-          &:hover {
-            transform: scale(1.2);
-          }
+        @include widescreen {
+          font-size: 24px;
         }
       }
 
@@ -322,6 +334,13 @@
   // OPTION ==============================
 
   #why.content {
+    @include widescreen {
+      .container {
+        max-width: 100%;
+        padding: 0 5%;
+      }
+    }
+
     .reason {
       &__title {
         color: $secondary-color;

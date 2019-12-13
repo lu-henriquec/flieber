@@ -7,8 +7,22 @@ header {
   width: 100%;
   z-index: 10;
 
+  &:not(.fixed) {
+    @include widescreen {
+      padding-top: 45px;
+    }
+  }
+
   &.fixed {
     background: #fff;
+
+    .logo__black {
+      display: none;
+    }
+
+    .logo__fixed {
+      display: block;
+    }
   }
 
   .content {
@@ -28,7 +42,8 @@ header {
       width: 100%;
     }
 
-    &__white {
+    &__white,
+    &__fixed {
       display: none;
     }
   }
@@ -54,6 +69,10 @@ header {
       color: $primary-color;
       font-size: size(18);
 
+      @include widescreen {
+        font-size: 22px;
+      }
+
       &.feature {
         background: $primary-color;
         border-radius: 50px;
@@ -64,6 +83,11 @@ header {
         line-height: size(18);
         padding: size(10) size(25);
         text-transform: uppercase;
+
+        @include widescreen {
+          font-size: 22px;
+          padding: 12px 40px;
+        }
       }
 
       &:hover {

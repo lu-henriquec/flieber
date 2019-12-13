@@ -36,7 +36,7 @@
 				</a>
       </div>
       <div class="logo">
-        <img src='<?php bloginfo('template_url'); ?>/images/logo-black.png' alt='Flieber'/>
+        <img src='<?php bloginfo('template_url'); ?>/images/logo_Flieber_fixed.svg' alt='Flieber'/>
       </div>
     </div>
   </div>

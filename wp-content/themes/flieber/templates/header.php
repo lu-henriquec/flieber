@@ -3,8 +3,9 @@
     <div class='content'>
       <div class='logo'>
         <a href="<?php bloginfo('url'); ?>/">
-          <img class="logo__black" src='<?php bloginfo('template_url'); ?>/images/logo-black.png' alt='Flieber' />
-          <img class="logo__white" src='<?php bloginfo('template_url'); ?>/images/logo-white.png' alt='Flieber' />
+          <img class="logo__black" src='<?php bloginfo('template_url'); ?>/images/logo_Flieber.svg' alt='Flieber' />
+          <img class="logo__fixed" src='<?php bloginfo('template_url'); ?>/images/logo_Flieber_fixed.svg' alt='Flieber' />
+          <img class="logo__white" src='<?php bloginfo('template_url'); ?>/images/logo_Flieber_White.svg' alt='Flieber' />
         </a>
       </div>
       <nav>

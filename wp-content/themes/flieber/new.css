@@ -1,0 +1,506 @@
+body {
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+}
+@media (max-width: 2560px) {
+  body {
+    font-size: 28px;
+  }
+}
+@media (max-width: 2240px) {
+  body {
+    font-size: 24.5px;
+  }
+}
+@media (max-width: 1920px) {
+  body {
+    font-size: 21px;
+  }
+}
+@media (max-width: 1700px) {
+  body {
+    font-size: 17.5px;
+  }
+}
+@media (max-width: 1466px) {
+  body {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 1280px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/*HEADER*/
+header {
+  padding: 0;
+}
+header:not(.fixed) {
+  padding-top: 1em;
+}
+header .logo {
+  padding: 1em 0;
+}
+header nav {
+  padding: 0 3.875em;
+}
+header nav li {
+  margin: 0 1.8625em;
+}
+header nav li:last-child {
+  margin-left: 1.8625em;
+}
+header nav a {
+  font-size: 1em;
+}
+header nav a.feature {
+  font-size: 1em;
+}
+/*HEADER*/
+.container {
+  max-width: 2800px;
+  padding: 0 4em;
+}
+/*FEATURE*/
+.home section.feature {
+  background: linear-gradient(
+      to right,
+      rgb(46, 166, 208) 50%,
+      rgb(241, 241, 243) 50%
+    )
+    0% 0% / 200% 100%;
+  transition: all 1s ease 0s;
+  height: 42.85714em;
+}
+.home section.feature .container {
+  padding: 0 4em 0 6em;
+}
+.home section.feature .content {
+  grid-template-columns: 39% 61%;
+}
+.home section.feature .slider-nav {
+  padding-bottom: 2em;
+}
+.home section.feature .slider-nav h2 {
+  line-height: 1.2em;
+  font-size: 2.4em;
+  margin-bottom: 1em;
+  font-family: "Trebuchet MS";
+}
+.home section.feature .slider-nav p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+  font-family: "Trebuchet MS";
+}
+.home section.feature .slick-dots {
+  margin-top: 2em;
+}
+.home section.feature .slider-nav button {
+  letter-spacing: 0.1em;
+}
+.home section.feature .slider-nav .slick-slide button {
+  font-size: 1em;
+  margin-bottom: 0;
+  padding: 0.7em 1.4em;
+}
+.home section.feature .slider-for {
+  max-height: 41.875em;
+  margin: 0 auto 2em;
+  padding-top: 0.22em;
+}
+.home section.feature .slider-for > div {
+  max-height: 41.875em;
+}
+.home section.feature .slider-mask {
+  margin-left: 0;
+}
+/*FEATURE*/
+
+/*VIDEOS*/
+.home section.videos {
+  background: #343f53;
+}
+.home section.videos .container {
+  padding-right: 1em;
+}
+.home section.videos .content {
+  grid-template-columns: 68% 32%;
+}
+.home section.videos .videos__text {
+  width: 18em;
+  font-size: 1.2em;
+  right: 5em;
+  top: 5em;
+  line-height: 1.8em;
+  font-family: "Trebuchet MS";
+}
+.home section.videos .videos__text:before {
+  height: 0.1em;
+  left: -2em;
+  top: -2em;
+  width: 6em;
+}
+.home section.videos .videos__text span {
+  font-size: 3em;
+  margin-bottom: 0.8em;
+  padding-left: 0.2em;
+  font-family: "Trebuchet MS";
+}
+.home section.videos .content .slider-for.slick-initialized .slick-slide {
+  margin: 0 0.3em;
+}
+.home section.howwedoit .item {
+  background: #eceef0 url("images/browser.png") no-repeat;
+  background-size: contain;
+  border-radius: 4px 4px 0 0;
+}
+.home section.howwedoit .slick-slide:nth-child(odd) .item {
+  background: #212a3d url("images/browser.png") no-repeat;
+  background-size: contain;
+}
+/*VIDEOS*/
+
+/*ADVANTAGES*/
+.home section.advantages .bg:before {
+  background: #343f53 url(./images/BG_teia_home.jpg) center 130% no-repeat;
+}
+.home section.advantages .container {
+  max-width: 79em;
+}
+.home section.advantages .content {
+  grid-gap: 6em;
+}
+.home section.advantages h2 {
+  font-size: 2.5em;
+  font-family: "Trebuchet MS";
+}
+.home section.advantages .text {
+  font-size: 1.1em;
+  line-height: 2em;
+  margin-bottom: 3em;
+  margin-top: 0.5em;
+  max-width: 50%;
+  font-family: "Trebuchet MS";
+}
+.home section.advantages .box {
+  padding: 2em 2.2em;
+  height: 25em;
+}
+.home section.advantages .box__image {
+  height: 5em;
+  margin: 1em 0 2em 0;
+}
+.home section.advantages .box h3 {
+  font-size: 2em;
+  font-family: "Trebuchet MS";
+}
+.home section.advantages .box p {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: "Trebuchet MS";
+}
+.home section.advantages .button {
+  border-radius: 2em;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 5em auto 0;
+  padding: 0.9em 2em;
+  letter-spacing: 0.2em;
+  font-family: "Trebuchet MS";
+}
+/*ADVANTAGES*/
+
+/*HOW WE DO IT*/
+.home section.howwedoit .intro {
+  padding: 0;
+  margin-bottom: 1em;
+  font-family: "Keep Calm Med";
+}
+.home section.howwedoit .intro img {
+  margin-bottom: 1em;
+  width: 5%;
+}
+.home section.howwedoit .intro p {
+  font-size: 0.9em;
+  line-height: 2em;
+  margin-top: 1em;
+  max-width: 45%;
+}
+.home section.howwedoit .item {
+  padding: 6% 0 13%;
+}
+.home section.howwedoit .item h4 {
+  font-family: "Trebuchet MS";
+  font-size: 4em;
+}
+.home section.howwedoit .item h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.home section.howwedoit .item p,
+.home section.howwedoit .item small {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.home section.howwedoit .item > div {
+  flex-basis: 43%;
+}
+.home section.howwedoit .item__text {
+  padding: 0 3em;
+  flex-basis: 57% !important;
+}
+.home section.howwedoit .item > div:not(.item__text) {
+  padding-right: 10%;
+}
+.home section.howwedoit div.slick-current {
+  margin-left: -3.2em;
+}
+.home section.howwedoit div.slick-current:first-child {
+  margin-left: 0;
+}
+/*HOW WE DO IT*/
+
+/*DEPOIMENTS*/
+.home section.depoiments .depoiments__item {
+  padding: 0 4.5em 0 2.5em;
+}
+.home section.depoiments .depoiments__item p {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+}
+.home section.depoiments .depoiments__item h3 {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+.home section.depoiments .depoiments__item h4 {
+  font-size: 1.1em;
+}
+/*DEPOIMENTS*/
+
+/*TRANSPORTS*/
+.home section.transports .slick-dots button {
+  font-size: 1.2em;
+  padding: 0.6em 1.2em;
+}
+.home section.transports .transports__item {
+  padding: 0 7em;
+}
+.home section.transports .transports__item h3 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+.home section.transports .transports__item p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+.home section.transports .transports__item button {
+  border-radius: 2em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding: 0.6em 2.5em;
+}
+/*TRANSPORTS*/
+
+/*BLOG*/
+.home section.blog {
+  margin-top: -0.4em;
+  background-color: #fff;
+  position: relative;
+  padding: 5em 0;
+}
+.home section.blog .blog__top h2 {
+  font-size: 2em;
+}
+.home section.blog .blog__tabs a {
+  padding: 1em 1.5em;
+  font-size: 1.2em;
+}
+.home section.blog .blog__post:first-child {
+  padding-left: 0;
+}
+.home section.blog .blog__post:nth-child(3n + 1) {
+  max-width: 30em;
+}
+.home section.blog .blog__post div {
+  margin-bottom: 1em;
+  margin-left: 1.7em;
+  margin-top: -0.8em;
+  padding: 0.3em 0.6em;
+}
+.home section.blog .blog__post h3 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.home section.blog .blog__post p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.home section.blog .blog__content {
+  max-height: 50em;
+  height: auto;
+}
+.home section.blog .blog__mask:before {
+  width: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 1)
+  );
+}
+/*BLOG*/
+
+/*CONTACT*/
+.contact-form {
+  padding: 5em 0 1em 0;
+}
+.contact-form .container {
+  max-width: 55%;
+}
+.contact-form h3 {
+  font-size: 2.4em;
+  margin-bottom: 1em;
+}
+.contact-form p {
+  margin-bottom: 0;
+}
+.contact-form input:not([type="submit"]),
+.contact-form textarea {
+  font-size: 1.2em;
+  padding: 1em 0;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #2ea6d0;
+}
+.contact-form input[type="submit"] {
+  border-radius: 2em;
+  font-size: 0.9em;
+  padding: 1em 3.3em;
+  letter-spacing: 0.1em;
+}
+/*CONTACT*/
+
+/*FOOTER*/
+.address {
+  height: 19em;
+  background-size: 35em;
+}
+.address .content p {
+  font-size: 1em;
+}
+/*FOOTER*/
+
+/*OUR VISION*/
+.page-template-our-vision main .box__social {
+  top: 8%;
+}
+.page-template-our-vision main .image__plx .blue {
+  width: 32%;
+  height: 25%;
+}
+.page-template-our-vision main .image__plx .dark {
+  background-size: 62%;
+  background-position: -50px 11rem;
+}
+.page-template-our-vision main .image__plx .white {
+  height: 82%;
+  width: 156%;
+}
+.page-template-our-vision section#content h1 {
+  font-size: 4em;
+}
+.page-template-our-vision section#content .box__text {
+  font-size: 1.3em;
+}
+/*OUR VISION*/
+
+@media (max-width: 1919px) {
+  .home section.advantages .bg:before {
+    background: #343f53 url(./images/BG_teia_home.jpg) center 80% no-repeat;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    padding: 1em 0;
+  }
+  .home section.feature {
+    height: 100%;
+  }
+  .home section.feature .container {
+    padding: 0 3em;
+  }
+  .home section.feature .content {
+    grid-template-columns: 100%;
+  }
+  .home section.feature .slider-mask {
+    display: none;
+  }
+  .home section.videos .container {
+    padding: 0 3em;
+  }
+  .home section.videos .videos__text {
+    width: 100%;
+    right: 0;
+  }
+  .home section.videos .content {
+    grid-template-columns: 100%;
+  }
+  .home section.advantages .text {
+    max-width: 100%;
+  }
+  .home section.advantages .box__image {
+    height: auto;
+  }
+  .home section.advantages .box {
+    height: 27em;
+  }
+  .home section.howwedoit .item > div {
+    flex-basis: 100% !important;
+    height: 24em;
+  }
+  .home section.howwedoit div.slick-current {
+    margin-left: 0;
+  }
+  .home section.depoiments .slider-nav img {
+    display: none;
+  }
+  .home section.depoiments .depoiments__item {
+    padding: 4.5em;
+  }
+  .home section.depoiments .depoiments__item h4 {
+    margin-bottom: 1em;
+  }
+  .home section.transports .slick-dots {
+    margin: 0 1em;
+  }
+  .home section.transports .transports__item {
+    padding: 3em;
+  }
+  .home section.blog .container {
+    padding: 0 3em;
+  }
+  .home section.blog .blog__mask:before {
+    display: none;
+  }
+  .home section.blog .blog__post {
+    max-width: 15em;
+    padding: 1em;
+  }
+  .home section.blog .blog__post:nth-child(3n + 1) {
+    max-width: 20em;
+  }
+  .contact-form .container {
+    max-width: 85%;
+  }
+}

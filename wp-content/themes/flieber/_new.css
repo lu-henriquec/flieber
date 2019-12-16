@@ -1,0 +1,700 @@
+@media (min-width: 1700px){
+	header .logo {
+	    width: auto;
+        padding: 1.9375em 0;
+	}
+	header nav {
+		padding: 0 5.875em;
+	}
+	header nav li {
+	    margin: 0 1.8625em;
+	}
+	header nav li:last-child {
+	    margin-left: 1.8625em;
+	}
+	header nav a {
+	    font-size: 1.525em;
+	}
+	header nav a.feature {
+	    font-size: 1.525em;
+	}
+	.container {
+		padding: 0 5.875em;
+	}
+	.home section.feature {
+	    height: 62.25em;
+	    background: linear-gradient(to right, rgb(46, 166, 208) 50%, rgb(241, 241, 243) 50%) 0% 0% / 200% 100%;
+    	transition: all 1s ease 0s;
+	}
+	.home section.feature .content {
+	    grid-template-columns: 37% 63%;
+	}
+	.home section.feature .slider-for {
+		max-height: 100%; 
+	}
+	.home section.feature .slider-for>div {
+		max-height: 100%;
+	}
+	.home section.feature .slider-mask {
+	    background-size: 100% 100.5%;
+		background-position-y: -1px;
+	}
+	.home section.feature .slider-for img {
+	    margin-bottom: 12px;
+	}
+	.home section.feature .slider-nav h2 {
+		line-height: 65px;
+		font-size: 3.1875em;
+		margin-bottom: 1em;
+	}
+	.home section.feature .slider-nav p {
+	    font-size: 1.975em;
+	    line-height: 40px;
+	    margin-bottom: 2em;
+	}
+	.home section.feature .slider-nav button {
+	    font-size: 1.5em;
+	    padding: 15px 40px;
+	}
+	.home section.feature .slick-dots {
+		margin-top: 60px;
+	}
+	.home section.feature .slick-dots button {
+		font-size: 0;
+		padding: 0;
+	}
+	.home section.videos .content {
+	    grid-template-columns: 65% 35%;
+	}
+	.home section.videos .slider-nav {
+		padding: 35px 0;
+	}
+	.home section.videos .videos__text {
+		font-size: 2em;
+		right: 10em;
+		width: 500px;
+		top: 150px;
+	}
+	.home section.videos .videos__text:before {
+	    left: -60px;
+	    top: -50px;
+	    width: 170px;
+	}
+	.home section.videos .videos__text span {
+	    font-size: 2.5em;
+	    margin-bottom: 40px;
+	    padding-left: 40px;
+	}
+	.home section.videos .slick-initialized .slick-slide {
+		padding: 15px 15px 15px 0;
+	}
+	.home section.videos .slick-initialized.slider-for .slick-current {
+		display: none;
+	}
+	.home section.videos .slick-dots {
+	    padding: 0 3em;
+	}
+	.home section.advantages .container {
+		max-width: 118em;
+	}
+	.home section.advantages h2 {
+		font-size: 4em;
+	}
+	.home section.advantages .content {
+		grid-gap: 7.575em;
+	}
+	.home section.advantages .text {
+	    font-size: 2em;
+	    line-height: 40px;
+	    margin-bottom: 80px;
+	}
+	.home section.advantages .box__image {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.home section.advantages .box {
+		padding: 30px 55px;
+		height: 37em;
+	}
+	.home section.advantages .box h3 {
+		font-size: 3em;
+	}
+	.home section.advantages .box p {
+		font-size: 1.425em;
+    	line-height: 35px;
+	}
+	.home section.advantages .button {
+		letter-spacing: 3px;
+	}
+	.home section.howwedoit .intro img {
+		margin-top: 20px; 
+	}
+	.home section.howwedoit .intro h3 {
+		font-size: 3.125em;
+	    margin: 15px auto;
+	}
+	.home section.howwedoit .intro p {
+	    font-size: 1.425em;
+	    line-height: 40px;
+	}
+	.home section.howwedoit .slick-current .item p {
+	    line-height: 30px;
+	}
+	.home section.howwedoit .item__text {
+	    padding: 0 2rem 0 5rem;
+	}
+	.home section.howwedoit .item>div {
+		flex-basis: 60%;
+	}	
+	.home section.howwedoit .item>div:not(.item__text) {
+		flex-basis: 40%;
+	}
+	.home section.howwedoit .slick-slider .slick-list {
+		margin-left: 160px;
+	}
+	.home section.howwedoit div.slick-current {
+	    margin-left: -70px;
+	}
+	.home section.howwedoit div.slick-current:first-child {
+	    margin-left: 0;
+	}
+	.home section.howwedoit .slick-dots li.slick-active:first-child {
+		margin-left: 110px;
+	}
+	.home section.depoiments .depoiments__item p {
+	    font-size: 2.5em;
+	    line-height: 60px;
+	    margin-bottom: 40px;
+	}
+	.home section.depoiments .depoiments__item h3 {
+	    font-size: 18px;
+	}
+	.home section.depoiments .depoiments__item h4 {
+		font-size: 23px;
+	}
+	.home section.transports {
+		margin-top: -3px;
+	}
+	.home section.transports .slick-dots {
+		margin-left: 5.875em;
+	}
+	.home section.transports .slick-dots button {
+		font-size: 2em;
+	}
+	.home section.transports .transports__item {
+		padding-left: 5.875em;
+	}
+	.home section.transports .transports__item h3 {
+		font-size: 4em;
+	    margin-bottom: 0;
+	}
+	.home section.transports .transports__item p {
+		font-size: 2em;
+	    line-height: 40px;
+	    margin: 60px 0; 
+	}
+	.home section.transports .transports__item button {
+	    padding: 20px 50px;
+	    letter-spacing: 5px;
+	    margin-bottom: 60px;
+	}
+	.home section.transports .slider-nav {
+		margin-bottom: 3px;
+	}
+	.home section.blog {
+		margin-top: -3px;
+		background-color: #fff;
+	}
+	.home section.blog .blog__top h2 {
+		font-size: 3.5em;
+	}
+	.home section.blog .blog__tabs a {
+		padding: 25px;
+    	font-size: 2em;
+	}
+	.home section.blog .blog__content.active {
+		margin-left: -30px;
+	}
+	.home section.blog .blog__content {
+	    height: 800px;
+	}
+	.contact-form .container {
+	    max-width: 1000px;
+	}
+	.contact-form h3 {
+		font-size: 3.5em;
+		margin-bottom: 60px;
+    	margin-top: 60px;
+	}
+	.contact-form input:not([type="submit"]), .contact-form textarea {
+	    font-size: 2em;
+	}
+	.contact-form input[type="submit"] {
+	    font-size: 1.5em;
+	    padding: 20px 70px;
+	}
+	.address .content p {
+		font-size: 1.5em;
+    	line-height: 35px;
+	}
+	footer .text {
+		font-size: 1.5em;
+	}
+	footer .social a {
+	    margin: 0 20px;
+	}
+	footer .logo {
+		width: 200px;
+	}
+
+	.page-template-our-vision section#content .box__brand {
+		max-width: 92%;
+	    height: 90vh;
+	}
+	.page-template-our-vision section#content h1 {
+		font-size: 6em;
+	}
+	.page-template-our-vision section#content .box__text {
+		font-size: 1.8em;
+	}
+	.page-template-our-vision main .image__plx .blue {
+	    width: 52%;
+	    height: 60%;
+	}
+	.page-template-our-vision main .image__plx .white {
+		height: 76%;
+	}
+	.page-template-our-vision main .image__plx .dark {
+	    background-size: 63%;
+    	background-position: -45px 12rem;
+	}
+	.page-template-our-vision section#content .box__title {
+		font-size: 2.6em;
+	}
+	.page-template-our-vision section#content .box__description {
+		font-size: 1.7em;
+	    word-break: break-word;
+	}
+	.page-template-our-vision section#content .right .box__image {
+	    margin-left: 100px;
+	}
+	.page-template-our-vision section#content .right .box__infos {
+		padding-right: 0;
+	}
+	.page-template-our-vision section#info .info {
+		font-size: 3em;
+		padding: 105px 45px;
+		line-height: 80px;
+	}
+	.page-template-our-vision section#why .reason__title {
+		font-size: 3em;
+		margin-top: 60px;
+		letter-spacing: 5px;
+	}
+	.page-template-our-vision section#why .reason__description {
+	    color: #858a8f;
+	    font-size: 1.6em;
+	    margin: 25px 0 75px 0;
+	}
+	.page-template-our-vision section#why .box-card {
+	    column-gap: 50px;
+	}
+	.page-template-our-vision section#why .card {
+	    background-color: #fff;
+		padding: 60px 41px 85px;
+	}
+	.page-template-our-vision section#why .card__title {
+		font-size: 2.5em;
+	    line-height: 45px;
+        font-weight: normal;
+	}
+	.page-template-our-vision section#why .card__description {
+		line-height: 35px;
+	    font-size: 1.3em;	
+	}
+
+	.page-template-our-solution main .image__plx .blue {
+		width: 46%;
+		height: 52%;
+	}
+	.page-template-our-solution main .image__plx .white {
+	    height: 73%;
+	}
+	.page-template-our-solution section#content .box__brand {
+		max-width: 84%;
+	    height: 96vh;
+	}
+	.page-template-our-solution section#content h1 {
+		font-size: 6em;
+	    margin-top: 150px;
+	}
+	.page-template-our-solution section#content .box__text {
+		font-size: 1.8em;
+	}
+	.page-template-our-solution #option .image {
+		padding-right: 115px;
+	}
+	.page-template-our-solution #option .option {
+		width: 850px;
+	}
+	.page-template-our-solution #option .option__box .title {
+	    font-size: 3em;
+	}
+	.page-template-our-solution #option .option__description {
+		font-size: 1.5em;
+		line-height: 40px;
+	}
+	.page-template-our-solution #option .grafico {
+	    margin-left: -82px;
+	}
+	.page-template-our-solution #option .option__image {
+		width: 72px;
+	}
+	.page-template-our-solution #why.content .reason__title {
+		font-size: 3.2em;
+		letter-spacing: 5px;
+	}
+	.page-template-our-solution section#why .reason__description {
+		font-size: 1.6em;
+		margin: 25px 290px 75px 290px;
+		line-height: 40px;
+	}
+	.page-template-our-solution #why.content .card__number {
+		font-family: Arial;
+		font-size: 8em;
+		margin-left: 20px;
+	}
+	.page-template-our-solution section#why .card__title {
+		font-size: 2em;
+		letter-spacing: 1px;
+	}
+	.page-template-our-solution #why.content .card__description {
+	    font-size: 1.3em;
+	    line-height: 33px;
+	}
+	.page-template-our-solution section#why .card {
+	    padding: 60px 32px 85px;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1699px){
+	header nav a.feature {
+	    font-size: 1em;
+	}
+	.container {
+		padding: 0 3.875em;
+	}
+	.home section.feature .container {
+		padding: 0 2.875em 0 5.875em;
+	}
+	.home section.feature .content {
+	    grid-template-columns: 36% 64%;
+	}
+	.home section.feature .slider-nav {
+		margin-bottom: 40px;
+		padding-bottom: 0;
+	}
+	.home section.feature .slider-nav h2 {
+		line-height: 40px;
+		font-size: 2em;
+		margin-bottom: 1em;
+	}
+	.home section.feature .slider-nav p {
+	    font-size: 1.3em;
+	    line-height: 30px;
+	    margin-bottom: 2em;
+	}
+	.home section.feature .slider-mask {
+	    background-position-y: 3px;
+	}
+	.home section.videos .container {
+		padding: 0 2.875em 0 5.875em;
+	}
+	.home section.videos .slider-nav {
+		padding: 35px 0;
+	}
+	.home section.videos .content {
+	    grid-template-columns: 65% 35%;
+	}
+	.home section.videos .videos__text {
+		right: 10em;
+		width: 315px;
+		top: 100px;
+	}
+	.home section.videos .videos__text:before {
+		left: -25px;
+		top: -30px;
+		width: 110px;
+	}
+	.home section.videos .videos__text span {
+	    font-size: 2.5em;
+	    margin-bottom: 40px;
+	    padding-left: 40px;
+	}
+	.home section.videos .slick-initialized .slick-slide {
+		padding: 15px 15px 15px 0;
+	}
+	.home section.videos .slick-initialized.slider-for .slick-current {
+		display: none;
+	}
+	.home section.videos .slick-dots {
+	    padding: 0 3em;
+	}
+	.home section.advantages .container {
+		max-width: 80em;
+	}
+	.home section.advantages .text {
+	    font-size: 1.3em;
+	}
+	.home section.advantages .box img {
+		width: 30%;
+	}
+	.home section.advantages .box h3 {
+		font-size: 2em;
+	}
+	.home section.advantages .box p {
+		font-size: 1em;
+    	line-height: 25px;
+	}
+	.home section.advantages .box__image {
+		margin-top: -15px;
+		margin-bottom: 0;
+	}
+	.home section.advantages .box {
+		padding: 30px 35px;
+		height: 25em;
+	}
+	.home section.advantages .button {
+		font-size: 0.85em;
+		letter-spacing: 2px;
+		padding: 10px 30px;
+		margin-top: 70px;
+	}
+	.home section.howwedoit .intro img {
+	    margin-bottom: 30px;
+	    margin-top: 30px;
+	    width: 3%;
+	}
+	.home section.howwedoit div.slick-current {
+	    margin-left: -50px;
+	}
+	.home section.howwedoit div.slick-current:first-child {
+	    margin-left: 0;
+	}
+	.home section.howwedoit .slick-dots li:first-child {
+		margin-left: -110px;
+	}
+	.home section.howwedoit .slick-dots li.slick-active:first-child {
+		margin-left: 0;
+	}
+	.home section.depoiments .depoiments__item p {
+		font-size: 1.5em;
+	}
+	.home section.transports {
+		margin-top: -3px;
+	}
+	.home section.transports .slick-dots button {
+		font-size: 1em;
+	}
+	.home section.blog {
+		margin-top: -3px;
+		background-color: #fff;
+	}
+	.home section.transports .slider-nav {
+		margin-bottom: 3px;
+	}
+	.home section.blog .container {
+	    padding: 0 0.875em 0 10.875em;
+	    max-width: 100%;
+	}
+	.home section.blog .blog__tabs {
+	    margin-right: 10%;
+	}
+	.home section.blog .blog__tabs a {
+		padding: 25px;
+    	font-size: 1.3em;
+	}
+	.home section.blog .blog__content.active {
+		margin-left: -30px;
+	}
+	.home section.blog .blog__post {
+		max-width: 330px;
+	}
+	.home section.blog .blog__post:nth-child(3n+1) {
+		max-width: 560px;
+	}
+	.contact-form .container {
+	    max-width: 800px;
+	}
+	.contact-form h3 {
+		font-size: 2.3em;
+		margin-bottom: 40px;
+    	margin-top: 30px;
+	}
+	.contact-form input:not([type="submit"]), .contact-form textarea {
+	    font-size: 1.2em;
+	    padding: 3px 0;
+	}
+	.contact-form input[type="submit"] {
+	    font-size: 1.1em;
+	}
+
+	.page-template-our-vision section#content .box__brand {
+		max-width: 92%;
+	    height: 70vh;
+	}
+	.page-template-our-vision section#content h1 {
+		font-size: 4em;
+	}
+	.page-template-our-vision section#content .box__text {
+		font-size: 1.25em;
+		line-height: 30px;
+	}
+	.page-template-our-vision main .image__plx .blue {
+	    width: 55%;
+	    height: 45%;
+	}
+	.page-template-our-vision main .image__plx .white {
+		width: 150%;
+    	height: 82%;
+	}
+	.page-template-our-vision main .image__plx .dark {
+	    background-size: 65%;
+    	background-position: -40px 10rem;
+	}
+	.page-template-our-vision section#content .box__image {
+		width: 430px;
+    	height: 300px;
+	}
+	.page-template-our-vision section#content .box__infos {
+	    width: 430px;
+    	margin-left: 70px;
+	}
+	.page-template-our-vision section#content .box__title {
+		font-size: 2em;
+	}
+	.page-template-our-vision section#content .box__description {
+		font-size: 1.20em;
+		line-height: 25px;
+		margin-top: 30px;
+		word-break: break-word;
+	}
+	.page-template-our-vision section#content .right .box__image {
+	    margin-left: 70px;
+	}
+	.page-template-our-vision section#content .right .box__infos {
+		padding-right: 0;
+	}
+	.page-template-our-vision section#info .info {
+		font-size: 2em;
+		padding: 70px 45px;
+		line-height: 50px;
+	}
+	.page-template-our-vision section#why {
+		padding: 50px 0;
+	}
+	.page-template-our-vision section#why .reason img {
+		width: 3%;
+	}
+	.page-template-our-vision section#why .reason__title {
+		font-size: 2em;
+		margin-top: 40px;
+		letter-spacing: 5px;
+	}
+	.page-template-our-vision section#why .reason__description {
+	    color: #858a8f;
+	    font-size: 1.1em;
+	    margin: 25px 0 55px 0;
+	}
+	.page-template-our-vision section#why .box-card {
+	    column-gap: 50px;
+	}
+	.page-template-our-vision section#why .card {
+	    background-color: #fff;
+		padding: 10px 10px 40px;
+	}
+	.page-template-our-vision section#why .card__icon {
+		margin: 0;
+	}
+	.page-template-our-vision section#why .card__icon img {
+		width: 30%;
+	}
+	.page-template-our-vision section#why .card__title {
+		font-size: 1.8em;
+	    line-height: 35px;
+        font-weight: normal;
+        padding-bottom: 10px;
+	}
+	.page-template-our-vision section#why .card__description {
+		line-height: 25px;
+	    font-size: 0.9em;
+	}
+
+	.page-template-our-solution section#content .box__brand {
+		max-width: 85%;
+	    height: 62vh;
+	}
+	.page-template-our-solution section#content h1 {
+		font-size: 4em;
+		margin-top: 100px;
+	}
+	.page-template-our-solution section#content .box__text {
+		font-size: 1.25em;
+		line-height: 30px;
+	}
+	.page-template-our-solution main .image__plx .blue {
+	    width: 40%;
+	    height: 35%;
+	}
+	.page-template-our-solution main .image__plx .white {
+		width: 150%;
+    	height: 84%;
+	}
+	.page-template-our-solution main .image__plx .dark {
+	    background-size: 100%;
+    	background-position: 0px -12rem;
+	}
+	.page-template-our-solution #option .option__box:nth-child(odd) .title, 
+	.page-template-our-solution #option .option__box .title {
+		font-size: 1.8em;
+	}
+	.page-template-our-solution #option .option__description {
+		font-size: 1em;
+	}
+	.page-template-our-solution #option .option__image {
+		width: 50px;
+		margin-right: 50px;
+	}
+	.page-template-our-solution #option .option {
+		width: 780px;
+	}
+	.page-template-our-solution #option .grafico {
+	    margin-left: -54px;
+	}
+	.page-template-our-solution #option .image {
+		padding-right: 40px;
+	}
+	.page-template-our-solution section#why .reason__title {
+		font-size: 2.3em;
+	}
+	.page-template-our-solution section#why .reason__description {
+		font-size: 1em;
+		margin: 25px 210px 75px 210px;
+		line-height: 25px;
+	}
+	.page-template-our-solution #why.content .card__number {
+		font-family: Arial;
+		font-size: 5em;
+		margin-left: 20px;
+	}
+	.page-template-our-solution section#why .card__title {
+		font-size: 1.5em;
+		letter-spacing: 1px;
+	}
+	.page-template-our-solution #why.content .card__description {
+	    font-size: 0.8em;
+	    line-height: 25px;
+	}
+	.page-template-our-solution section#why .card {
+	    padding: 30px 28px 45px;
+	}
+}

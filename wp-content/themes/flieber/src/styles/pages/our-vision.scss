@@ -32,9 +32,9 @@
         height: 20%;
       }
 
-      @include lg-desktop() {
-        height: 130vh;
-      }
+      // @include lg-desktop() {
+      //   height: 130vh;
+      // }
 
       @include phone {
         height: 100vh;

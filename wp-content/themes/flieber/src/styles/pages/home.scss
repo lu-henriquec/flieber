@@ -4,6 +4,24 @@
 @import "aos/dist/aos";
 
 .home {
+  .box__social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 2%;
+    top: 12%;
+    z-index: 9999;
+    @include phone {
+      display: none;
+    }
+    a {
+      margin-bottom: 30px;
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
   section.feature {
     background: $secondary-color;
     height: size(600, 14);

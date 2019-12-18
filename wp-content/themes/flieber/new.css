@@ -47,26 +47,33 @@ header:not(.fixed) {
 }
 header .logo {
   padding: 1em 0;
+  width: 15.5em;
 }
 header nav {
   padding: 0 3.875em;
 }
 header nav li {
-  margin: 0 1.8625em;
-}
-header nav li:last-child {
-  margin-left: 1.8625em;
+  margin: 0 1.5em;
 }
 header nav a {
-  font-size: 1em;
+  font-size: 1.2em;
 }
-header nav a.feature {
-  font-size: 1em;
+header nav a.feature,
+header nav li:last-child a {
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+  padding: 1em 2.3em;
+}
+.box__social img {
+  width: 70%;
 }
 /*HEADER*/
 .container {
   max-width: 2800px;
   padding: 0 4em;
+}
+.box__social {
+  top: 4.8% !important;
 }
 /*FEATURE*/
 .home section.feature {
@@ -352,11 +359,8 @@ header nav a.feature {
 }
 .home section.blog .blog__mask:before {
   width: 30%;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 1)
-  );
+  /* background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,1)); */
+  background: transparent;
 }
 /*BLOG*/
 
@@ -407,15 +411,18 @@ header nav a.feature {
 }
 .page-template-our-vision main .image__plx .blue {
   width: 32%;
-  height: 25%;
+  height: 31%;
 }
 .page-template-our-vision main .image__plx .dark {
   background-size: 62%;
   background-position: -50px 11rem;
 }
 .page-template-our-vision main .image__plx .white {
-  height: 82%;
-  width: 156%;
+  height: 77%;
+  width: 110%;
+}
+.page-template-our-vision section#content .box__brand {
+  height: 88vh;
 }
 .page-template-our-vision section#content h1 {
   font-size: 4em;
@@ -423,7 +430,478 @@ header nav a.feature {
 .page-template-our-vision section#content .box__text {
   font-size: 1.3em;
 }
+.page-template-our-vision section#content .detalhes {
+  max-width: 82%;
+  margin: 0 auto;
+}
+.page-template-our-vision section#content .box__infos {
+  margin-left: 5em;
+  width: 50%;
+}
+.page-template-our-vision section#content .box__title {
+  font-size: 2em;
+}
+.page-template-our-vision section#content .box__description {
+  font-size: 1.2em;
+  word-break: break-word;
+  line-height: 1.8em;
+  margin-top: 2em;
+}
+.page-template-our-vision section#content .box__detail {
+  margin-bottom: 5em;
+}
+.page-template-our-vision section#content .box__image {
+  background-color: transparent;
+  width: 50%;
+  height: auto;
+}
+.page-template-our-vision section#content .box__image img {
+  width: 100%;
+}
+.page-template-our-vision section#info .info {
+  padding: 2em 2.5em;
+  font-size: 2.2em;
+  line-height: 1.8em;
+}
+.page-template-our-vision section#why .reason img {
+  width: 3%;
+  margin-bottom: 2em;
+}
+.page-template-our-vision section#why .reason__title {
+  font-size: 2.5em;
+}
+.page-template-our-vision section#why .reason__description {
+  font-size: 1.1em;
+  margin: 1em 0 3em 0;
+}
+.page-template-our-vision section#why .card {
+  background-color: #fff;
+  padding: 1em 2.5em;
+}
+.page-template-our-vision section#why .card:hover {
+  border: 2px solid #fff;
+}
+.page-template-our-vision section#why .card__icon {
+  height: 8em;
+  margin: 0 0 1em 0;
+}
+.page-template-our-vision section#why .card__icon img {
+  width: 30%;
+}
+.page-template-our-vision section#why .card__title {
+  font-size: 2em;
+  font-family: "Trebuchet MS";
+  padding-bottom: 0.3em;
+}
+.page-template-our-vision section#why .card__description {
+  line-height: 2em;
+  font-size: 1em;
+  font-family: "Trebuchet MS";
+  margin-bottom: 2em;
+}
 /*OUR VISION*/
+
+/*OUR SOLUTION*/
+.page-template-our-solution main .box__social {
+  top: 8%;
+}
+.page-template-our-solution main .image__plx .blue {
+  width: 32%;
+  height: 32%;
+}
+.page-template-our-solution main .image__plx .dark {
+  background-size: 100%;
+}
+.page-template-our-solution main .image__plx .white {
+  width: 110%;
+  height: 76%;
+}
+.page-template-our-solution section#content h1 {
+  font-size: 4em;
+  margin-top: 3em;
+}
+.page-template-our-solution section#content .box__text {
+  font-size: 1.3em;
+}
+.page-template-our-solution section#content .box__brand {
+  height: 80vh;
+}
+.page-template-our-solution #option .option__box {
+  margin-bottom: 4em;
+}
+.page-template-our-solution #option .option__box .title {
+  font-size: 2.3em;
+  font-family: "Trebuchet MS";
+}
+.page-template-our-solution #option .option {
+  width: 46em;
+}
+.page-template-our-solution #option .option__img {
+  max-width: 8em;
+  margin-right: 1rem;
+}
+.page-template-our-solution #option .option__image {
+  width: 3.5em;
+}
+.page-template-our-solution #option {
+  padding-left: 0;
+  padding-bottom: 3em;
+}
+.page-template-our-solution #option .image {
+  padding-right: 3em;
+}
+.page-template-our-solution section#why {
+  padding: 6em 0;
+}
+.page-template-our-solution #why.content .reason__title {
+  font-size: 2.6em;
+}
+.page-template-our-solution #why.content .reason__description {
+  margin: 1em 0 3em 0;
+  font-size: 1.4em;
+}
+.page-template-our-solution #why.content .card__description {
+  font-size: 0.9rem;
+  line-height: 2em;
+}
+.page-template-our-solution #why.content .card__number {
+  font-size: 6em;
+  margin-bottom: 0.3em;
+}
+.page-template-our-solution #why.content .card {
+  padding: 2em 1.5em 3em 1.5em;
+}
+.page-template-our-solution #why.content .card:hover {
+  border: 2px solid transparent;
+}
+/*OUR SOLUTION*/
+
+/*PRICING*/
+.page-template-pricing main .box__social {
+  display: -webkit-box;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  position: absolute;
+  right: 2%;
+  top: 8%;
+  z-index: 9999;
+}
+.page-template-pricing main .box__social a {
+  margin-bottom: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.page-template-pricing section.feature .container {
+  max-width: 93%;
+}
+.page-template-pricing section.feature .content {
+  grid-template-columns: 45% 55%;
+}
+.page-template-pricing main .image__plx {
+  height: 130vh;
+}
+.page-template-pricing main .image__plx .blue {
+  width: 32%;
+  height: 30%;
+}
+.page-template-pricing main .image__plx .white {
+  width: 120%;
+  height: 79%;
+}
+.page-template-pricing section.feature .slider-nav h2 {
+  font-size: 3.5em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+.page-template-pricing section.feature .slider-nav p {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+}
+.page-template-pricing section.feature .slider-for {
+  margin: 0 auto 2em;
+}
+.page-template-pricing .contact-form {
+  padding: 0;
+  margin-top: 0;
+}
+.page-template-pricing .contact-form .slide {
+  padding-top: 2em;
+}
+.page-template-pricing .contact-form .slide__header {
+  padding-bottom: 2em;
+}
+.page-template-pricing .contact-form .slide__header span {
+  font-size: 1.2em;
+}
+.page-template-pricing
+  .contact-form
+  .slide__content
+  .wpcf7-form-control.wpcf7-radio {
+  padding: 2em 3em 3em 3em;
+}
+.page-template-pricing .contact-form p:first-child {
+  margin-top: 5em;
+}
+.page-template-pricing .contact-form .container .policy p {
+  margin: 3em auto 5em auto;
+  text-align: center;
+  color: gray;
+  font-size: 1.3em;
+}
+.page-template-pricing .contact-form .container .policy p a {
+  color: #2ea6d0;
+  text-decoration: underline;
+}
+/*PRICING*/
+
+/*BLOG*/
+.page-template-resources main .box__social {
+  display: -webkit-box;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  position: absolute;
+  right: 2%;
+  top: 8%;
+  z-index: 9999;
+}
+.page-template-resources main .box__social a {
+  margin-bottom: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.page-template-resources main .image__plx {
+  height: 130vh;
+}
+.page-template-resources main .image__plx .blue {
+  width: 32%;
+  height: 30%;
+}
+.page-template-resources main .image__plx .dark {
+  background: transparent url(./images/BG_pricing.jpg) bottom left no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.page-template-resources main .image__plx .white {
+  width: 120%;
+  height: 79%;
+}
+.page-template-resources section.welcome {
+  padding-top: 5em;
+  height: 69vh;
+  max-height: 45em;
+}
+.page-template-resources section.welcome .content {
+  padding: 0 2em 3.5em 2em;
+  width: 65%;
+}
+.page-template-resources section.welcome h2 {
+  font-size: 3.5em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  margin-top: 0.7em;
+}
+.page-template-resources section.welcome p {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+  margin-right: -1.5em;
+}
+.page-template-resources section.welcome form {
+  margin-top: 2.5em;
+  padding-bottom: 0.7em;
+  width: 74%;
+}
+.page-template-resources .blog {
+  padding: 0 0 5em 0;
+}
+.page-template-resources .blog .blog__top {
+  padding: 0 2em 3.5em 2em;
+}
+.page-template-resources .blog .blog__top h2 {
+  font-size: 2em;
+  width: 25%;
+}
+.page-template-resources .blog .blog__tabs a {
+  padding: 1em 1.5em;
+}
+.page-template-resources .blog .blog__post {
+  padding: 2em;
+}
+.page-template-resources .blog .blog__post div {
+  margin-bottom: 1em;
+  margin-left: 1.7em;
+  margin-top: -0.8em;
+  padding: 0.3em 0.6em;
+  text-transform: none;
+}
+.page-template-resources .blog .blog__post h3 {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+.page-template-resources .blog .blog__post p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.page-template-resources .blog .blog__post a {
+  text-decoration: underline;
+}
+.page-template-resources section.welcome form input[type="submit"] {
+  font-size: 0.8em;
+  padding: 0.7em 2.5em;
+  letter-spacing: 0.1em;
+  width: 85%;
+}
+
+.single main:before,
+.single main:after {
+  content: none;
+}
+.single-post main .image__plx {
+  background-color: transparent;
+  height: 130vh;
+  position: absolute;
+  width: 100%;
+}
+.single-post main .box__social {
+  display: -webkit-box;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  position: absolute;
+  right: 2%;
+  top: 8%;
+  z-index: 9999;
+}
+.single-post main .box__social a {
+  margin-bottom: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.single-post main .image__plx .blue {
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(transparent),
+    color-stop(50%, transparent),
+    color-stop(50%, #2ea6d0),
+    to(#2ea6d0)
+  );
+  background: linear-gradient(
+    to top right,
+    transparent 0%,
+    transparent 50%,
+    #2ea6d0 50%,
+    #2ea6d0 100%
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32%;
+  height: 30%;
+  z-index: 2;
+}
+.single-post main .image__plx .dark {
+  background: transparent url(./images/BG_pricing.jpg) bottom left no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.single-post main .image__plx .white {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(transparent),
+    color-stop(50%, transparent),
+    color-stop(50%, #fff),
+    to(#fff)
+  );
+  background: linear-gradient(
+    to bottom right,
+    transparent 0%,
+    transparent 50%,
+    #fff 50%,
+    #fff 100%
+  );
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120%;
+  height: 79%;
+  z-index: 1;
+}
+.single-post section.welcome {
+  padding-top: 5em;
+  height: 69vh;
+  max-height: 45em;
+}
+.single-post section.welcome .content {
+  padding: 0 2em 3.5em 2em;
+  width: 65%;
+}
+.single-post section.welcome h2 {
+  font-size: 3.5em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  margin-top: 0.7em;
+}
+.single-post section.welcome p {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+  margin-right: -1.5em;
+}
+.single-post section.welcome form {
+  margin-top: 2.5em;
+  padding-bottom: 0.7em;
+  width: 74%;
+}
+.single-post section.welcome form input[type="submit"] {
+  font-size: 0.8em;
+  padding: 0.7em 2.5em;
+  letter-spacing: 0.1em;
+  width: 85%;
+}
+.single-post .post .conteudo {
+  padding: 0 2em 0 2em;
+}
+.single .post .intro {
+  font-size: 1em;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.single-post .post .conteudo__top h2 {
+  font-size: 2em;
+  width: 35%;
+}
+.single-post .post .blog__tabs {
+  border-bottom: 1px solid #e0e1e2;
+  text-align: right;
+  width: 100%;
+}
+/*BLOG*/
 
 @media (max-width: 1919px) {
   .home section.advantages .bg:before {
@@ -502,5 +980,149 @@ header nav a.feature {
   }
   .contact-form .container {
     max-width: 85%;
+  }
+  .page-template-our-vision main .image__plx {
+    height: 50vh;
+  }
+  .page-template-our-vision main .image__plx .dark {
+    background-size: 130%;
+    background-position: -60px 6rem;
+  }
+  .page-template-our-vision section#content .box__text {
+    line-height: 2em;
+  }
+  .page-template-our-vision section#content .box__brand {
+    height: 53vh;
+  }
+  .page-template-our-vision section#content h1 {
+    margin: 0.5em auto;
+  }
+  .page-template-our-vision section#content .box__text br {
+    display: none;
+  }
+  .page-template-our-vision section#content .detalhes {
+    max-width: 100%;
+  }
+  .page-template-our-vision section#content .box__image,
+  .page-template-our-vision section#content .box__infos {
+    width: 100%;
+  }
+  .page-template-our-vision section#content .box__infos {
+    margin-left: 0;
+  }
+  .page-template-our-vision section#content .box__description {
+    margin: 1em;
+  }
+  .page-template-our-vision section#info .info {
+    font-size: 1.5em;
+  }
+  .page-template-our-vision section#info .info strong {
+    font-size: 1.2em;
+  }
+  .page-template-our-vision section#why .card__title br {
+    display: none;
+  }
+  .page-template-our-vision section#why .reason img {
+    width: 10%;
+  }
+  .page-template-our-solution main .image__plx .dark {
+    background-size: cover;
+    height: 88%;
+  }
+  .page-template-our-solution section#content h1 {
+    margin-top: 0;
+  }
+  .page-template-our-solution section#content .box__brand {
+    height: 95vh;
+  }
+  .page-template-our-solution section#content .box__text br {
+    display: none;
+  }
+  .page-template-our-solution #option .option {
+    width: 37em;
+  }
+  .page-template-our-solution #option .option__img {
+    margin: 0 auto;
+  }
+  .page-template-our-solution #why.content .reason__description {
+    padding: 0;
+  }
+  .page-template-pricing main .image__plx {
+    height: 100vh;
+  }
+  .page-template-pricing main .image__plx .dark {
+    background-size: cover;
+  }
+  .page-template-pricing main .box__social {
+    display: none;
+  }
+  .page-template-pricing section.feature .content {
+    grid-template-columns: 100%;
+  }
+  .page-template-pricing section.feature .slider-nav h2 {
+    margin-top: 2em;
+  }
+  .page-template-resources main .image__plx .dark {
+    background-size: cover;
+  }
+  .page-template-resources main .box__social {
+    display: none;
+  }
+  .page-template-resources main .image__plx {
+    height: 65vh;
+  }
+  .page-template-resources section.welcome .content {
+    padding: 0;
+    width: 100%;
+  }
+  .page-template-resources .blog .blog__top {
+    padding: 0 1em 1.5em 1em;
+  }
+  .page-template-resources section.blog .blog__top h2 {
+    font-size: 1.3em;
+    width: 50%;
+  }
+  .page-template-resources .blog .blog__tabs a {
+    padding: 1em 0.5em;
+  }
+  section.blog .blog__tabs {
+    width: auto;
+  }
+  .single .post .block-left .wp-block-media-text__content {
+    padding: 1em 0 !important;
+  }
+  .wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right
+    .wp-block-media-text__media {
+    padding: 1em 0 !important;
+  }
+  .single-post main .image__plx .dark {
+    background-size: cover;
+  }
+  .single-post main .box__social {
+    display: none;
+  }
+  .single-post main .image__plx {
+    height: 65vh;
+  }
+  .single-post main .image__plx .blue,
+  .single-post main .image__plx .white {
+    display: none;
+  }
+  .single-post section.welcome .content {
+    padding: 0;
+    width: 100%;
+  }
+  .single-post .blog .blog__top {
+    padding: 0 1em 1.5em 1em;
+  }
+  .single-post section.blog .blog__top h2 {
+    font-size: 1.3em;
+    width: 50%;
+  }
+  .single-post .blog .blog__tabs a {
+    padding: 1em 0.5em;
+  }
+  .single-post .post .conteudo__top h2 {
+    width: 120%;
   }
 }

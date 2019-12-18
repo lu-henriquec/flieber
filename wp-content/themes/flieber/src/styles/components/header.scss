@@ -23,6 +23,16 @@ header {
     .logo__fixed {
       display: block;
     }
+
+    nav {
+      li {
+        &.current-menu-item {
+          a {
+            border-color: #19254f;
+          }
+        }
+      }
+    }
   }
 
   .content {
@@ -60,8 +70,31 @@ header {
     li {
       margin: 0 size(25);
 
+      &.current-menu-item {
+        a {
+          border-bottom: 1px solid #fff;
+        }
+      }
+
       &:last-child {
         margin: 0;
+
+        a {
+          background: $primary-color;
+          border-radius: 50px;
+          color: #fff !important;
+          display: block;
+          // font-size: size(18);
+          font-weight: bold;
+          line-height: size(18);
+          padding: size(10) size(25);
+          text-transform: uppercase;
+
+          @include widescreen {
+            // font-size: 22px;
+            padding: 12px 40px;
+          }
+        }
       }
     }
 

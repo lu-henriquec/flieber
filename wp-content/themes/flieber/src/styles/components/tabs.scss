@@ -85,7 +85,8 @@ section.blog {
     &__post {
       padding: 30px;
       position: relative;
-      max-width: 360px;
+      // max-width: 360px;
+      // max-width: 360px;
 
       h3 {
         color: $secondary-color;
@@ -97,7 +98,7 @@ section.blog {
 
       p {
         color: #858a8f;
-        display: none;
+        // display: none;
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 20px;
@@ -108,7 +109,7 @@ section.blog {
       }
 
       .link {
-        display: none;
+        // display: none;
         text-decoration: underline;
         text-transform: lowercase;
       }
@@ -130,14 +131,14 @@ section.blog {
         width: 100%;
       }
 
-      &:nth-child(3n + 1) {
-        max-width: 660px;
+      // &:nth-child(3n + 1) {
+      //   max-width: 660px;
 
-        p,
-        .link {
-          display: block;
-        }
-      }
+      //   p,
+      //   .link {
+      //     display: block;
+      //   }
+      // }
     }
   }
 }

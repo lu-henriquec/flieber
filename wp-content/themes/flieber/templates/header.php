@@ -8,7 +8,8 @@
           <img class="logo__white" src='<?php bloginfo('template_url'); ?>/images/logo_Flieber_White.svg' alt='Flieber' />
         </a>
       </div>
-      <nav>
+      <?php wp_nav_menu( array( 'menu' => 'menu principal', 'container' => 'nav', 'menu_class' => 'navigation') ); ?>
+      <!-- <nav>
         <ul>
           <li><a href='<?php bloginfo('url'); ?>/our-vision'>Our Vision</a></li>
           <li><a href='<?php bloginfo('url'); ?>/our-solution'>Our Solution</a></li>
@@ -17,7 +18,7 @@
           <li><a href='#'>Log in</a></li>
           <li><a href='#' class='feature'>Get Started</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <a href="javascript:void(0)" class="menu"><span></span></a>
     </div>
   </div>

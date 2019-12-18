@@ -19,9 +19,28 @@
     }
   }
 
+  // &:before {
+  //   background-color: #c8c8c8;
+  //   content: "";
+  //   height: 30%;
+  //   left: 0;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   width: 100%;
+  // }
+
   main {
     position: relative;
 
+    background: linear-gradient(
+      160deg,
+      white 31%,
+      #eceef0 31%,
+      #eceef0 47%,
+      #eceef0 45%,
+      white 45%
+    );
     .image__plx {
       background-color: #343f53;
       height: 18%;

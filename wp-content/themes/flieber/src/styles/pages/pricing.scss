@@ -81,6 +81,7 @@
         background: transparent url("./images/BG_pricing.jpg") bottom left
           no-repeat;
         background-attachment: fixed;
+        background-size: cover;
         position: absolute;
         top: 0;
         left: 0;
@@ -190,6 +191,11 @@
         width: 50px;
       }
     }
+  }
+
+  .bg-wrap {
+    background-color: #eceef0;
+    padding-bottom: 3rem;
   }
 
   .contact-form {

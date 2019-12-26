@@ -150,6 +150,10 @@
     //   z-index: -1;
     // }
 
+    @include phone {
+      overflow: hidden;
+    }
+
     h1 {
       color: $secondary-color;
       font-size: 72px;
@@ -335,4 +339,14 @@
     }
   }
   // INFO ==================================
+
+  section#why {
+    .card {
+      &__icon img {
+        @include phone {
+          width: 22% !important;
+        }
+      }
+    }
+  }
 }

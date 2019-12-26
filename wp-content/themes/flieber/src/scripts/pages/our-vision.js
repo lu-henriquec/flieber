@@ -1,12 +1,12 @@
 import Setup from "../core";
 
 Setup(function Vision() {
-  console.log("Vision");
+  // console.log("Vision");
   const _this = Vision;
 
   _this.init = () => {
     if ($(window).width() <= 768) {
-      _this.carrosselWhy();
+      // _this.carrosselWhy();
     }
   };
 

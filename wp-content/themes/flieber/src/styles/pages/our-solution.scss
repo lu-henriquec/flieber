@@ -33,7 +33,7 @@
       }
 
       @include phone {
-        height: 100vh;
+        height: 65vh;
       }
 
       .blue {
@@ -167,6 +167,7 @@
         @include phone {
           max-width: 90%;
           padding: 50px 0;
+          height: 64vh !important;
         }
 
         @include widescreen {
@@ -219,6 +220,7 @@
 
         @include phone {
           margin-top: 30px;
+          line-height: 2em;
         }
 
         @include widescreen {
@@ -264,6 +266,12 @@
 
     @include phone {
       flex-direction: column;
+      grid-template-columns: 1fr;
+
+      .grafico {
+        display: block !important;
+        margin-bottom: 3rem;
+      }
     }
 
     .image {

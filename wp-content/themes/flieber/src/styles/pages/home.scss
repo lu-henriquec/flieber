@@ -38,6 +38,10 @@
 
     .container {
       height: 100%;
+
+      @include phone {
+        padding: 0 3em 0 4em !important;
+      }
     }
 
     .content {
@@ -104,6 +108,10 @@
           margin-bottom: 75px;
           padding: 12px 40px;
         }
+
+        @include phone {
+          font-size: 1.2em !important;
+        }
       }
     }
 
@@ -121,7 +129,9 @@
       }
 
       @include phone {
-        display: none;
+        display: block !important;
+        grid-row: 1;
+        margin-bottom: 1.5rem;
       }
     }
 
@@ -139,6 +149,11 @@
 
       @include widescreen {
         max-height: 700px;
+      }
+
+      @include phone {
+        margin: 0 auto 1em !important;
+        overflow: hidden;
       }
 
       & > div {
@@ -195,6 +210,10 @@
   section.videos {
     background: #333e54;
     padding-top: size(30);
+
+    @include phone {
+      overflow: hidden;
+    }
 
     .container {
       height: 100%;
@@ -465,6 +484,10 @@
       @include widescreen {
         padding: 12px 40px;
       }
+
+      @include phone {
+        font-size: 1.2em !important;
+      }
     }
   }
 
@@ -527,9 +550,9 @@
       & > div:not(.item__text) {
         padding-right: 5%;
 
-        @include phone {
-          display: none;
-        }
+        // @include phone {
+        //   display: none;
+        // }
       }
 
       &__text {
@@ -560,6 +583,7 @@
 
         @include phone {
           font-size: size(50);
+          margin-bottom: 15px;
         }
       }
 
@@ -684,6 +708,11 @@
 
     .container {
       max-width: 85%;
+
+      @include phone {
+        max-width: 100%;
+        padding: 0;
+      }
     }
 
     .content {
@@ -692,7 +721,8 @@
       justify-content: space-around;
 
       @include phone {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         div {
           margin: 10px 0;
@@ -834,9 +864,9 @@
     }
 
     .slider-for {
-      @include phone {
-        display: none;
-      }
+      // @include phone {
+      //   display: none;
+      // }
       img {
         width: 100%;
       }
@@ -907,6 +937,7 @@
 
       @include phone {
         margin-left: 0;
+        padding-top: 1.5em;
       }
 
       li {

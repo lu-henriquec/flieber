@@ -1,13 +1,13 @@
 import Setup from "../core";
 
 Setup(function Solution() {
-  console.log("Solution");
+  // console.log("Solution");
   const _this = Solution;
 
   _this.init = () => {
     if ($(window).width() <= 768) {
-      _this.carrosselWhy();
-      _this.carrosselOption();
+      // _this.carrosselWhy();
+      // _this.carrosselOption();
     }
   };
 
